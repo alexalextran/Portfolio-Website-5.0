@@ -3,11 +3,14 @@
 .section{
     @include fullScreen;
     background: linear-gradient(90deg, rgb(240,240,240),65%, rgb(28,204,91) 35%);
-    padding: 0 10em;
     font-size: 1.5em;
-    @include flexCenter(column);
-    div{
+    @include flexCenter(row);
+    .leftLP{
+        width: 65%;
         text-align: left;
         @include flexCustom(center, flex-start, column);
+    }
+    .rightLP{
+        width: 35%;
     }
 }
