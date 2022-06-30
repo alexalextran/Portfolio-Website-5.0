@@ -1,0 +1,18 @@
+.section {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, rgb(240, 240, 240), 65%, rgb(28, 204, 91) 35%);
+  padding: 0 10em;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section div {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
