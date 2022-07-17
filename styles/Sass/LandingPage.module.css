@@ -1,5 +1,5 @@
 .section {
-  width: 100vw;
+  width: 99.14vw;
   height: 100vh;
   background: linear-gradient(90deg, rgb(240, 240, 240), 65%, rgb(28, 204, 91) 35%);
   font-size: 1vw;
@@ -18,7 +18,7 @@
 }
 .section .leftLP * {
   flex-wrap: nowrap;
-  margin-left: 20%;
+  margin-left: 10%;
   white-space: nowrap;
 }
 .section .leftLP > p:nth-child(1) {

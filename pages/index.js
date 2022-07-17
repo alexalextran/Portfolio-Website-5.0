@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import AboutMe from '../components/AboutMe'
 import LandingPage from '../components/LandingPage'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function Home() {
   return (
@@ -12,7 +14,10 @@ export default function Home() {
       </Head>
 
       <main>
+      <ParallaxProvider>
        <LandingPage/>
+       <AboutMe/>
+       </ParallaxProvider>
       </main>
 
     </section>

@@ -1,0 +1,7 @@
+@import "./variables&functions";
+
+.section{
+    @include fullScreen;
+    font-size: 1vw;
+    background-color: rgb(240,240,240);
+}
