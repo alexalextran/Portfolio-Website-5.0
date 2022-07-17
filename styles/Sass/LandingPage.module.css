@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background: linear-gradient(90deg, rgb(240, 240, 240), 65%, rgb(28, 204, 91) 35%);
-  font-size: 1.5em;
+  font-size: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,27 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.section .leftLP * {
+  flex-wrap: nowrap;
+  margin-left: 20%;
+  white-space: nowrap;
+}
+.section .leftLP > p:nth-child(1) {
+  color: rgb(28, 204, 91);
+  font-size: 2em;
+  font-weight: 300;
+}
+.section .leftLP h1 {
+  font-size: 9em;
+}
+.section .leftLP h3 {
+  font-size: 2em;
+  background-color: rgb(28, 204, 91);
+}
 .section .rightLP {
   width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

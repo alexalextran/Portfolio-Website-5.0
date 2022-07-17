@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from "../styles/Sass/LandingPage.module.css"
+import profilepic from "../assets/profilepictrans.png"
+import Image from 'next/image'
 const LandingPage = () => {
     return (
         <section className={styles.section}>
@@ -9,10 +11,14 @@ const LandingPage = () => {
             <h3>Self-Taught 
               <br></br>
             Full Stack Web Developer</h3>
-            <p>Im a Computer Science Student with who is looking to specialize in web dev</p>
+           
             </div>
             <div className={styles.rightLP}>
-                right
+                
+                <div className={styles.image}>
+                   <Image src={profilepic} className={styles.image} /> 
+                </div>
+                
             </div>
         </section>
     );
