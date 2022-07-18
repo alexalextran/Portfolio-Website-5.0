@@ -1,6 +1,12 @@
 .section {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 99.14vw;
-  height: 100vh;
   font-size: 1vw;
-  background-color: rgb(240, 240, 240);
+  background: radial-gradient(circle, #fafafa 0, #d2d2d2 100%);
+}
+.section h1 {
+  margin: auto 0;
+  text-align: center;
 }

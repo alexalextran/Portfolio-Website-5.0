@@ -1,7 +1,13 @@
 @import "./variables&functions";
 
 .section{
-    @include fullScreen;
+   height: fit-content;
+   width: 99.14vw;
     font-size: 1vw;
-    background-color: rgb(240,240,240);
+    background: radial-gradient(circle,#fafafa 0,#d2d2d2 100%);
+
+    h1{
+        margin: auto 0;\
+        Atext-align: center;
+    }
 }
