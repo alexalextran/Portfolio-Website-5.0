@@ -37,9 +37,41 @@
   font-size: 2.5em;
   font-weight: 400;
 }
-.section .aboutmeDI .abboutmeDI__left {
+.section .aboutmeDI .aboutmeDI__left {
   text-align: left;
 }
-.section .aboutmeDI li {
+.section .aboutmeDI .aboutmeDI__left li {
   padding-left: 35%;
+}
+.section .aboutmeDI .aboutmeDI__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section .aboutmeDI .aboutmeDI__right .rightdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.section .aboutmeDI .aboutmeDI__right .rightIcon {
+  margin-top: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1em;
+  transition: box-shadow 400ms;
+}
+.section .aboutmeDI .aboutmeDI__right .rightIcon:hover {
+  cursor: pointer;
+  border-radius: 0.4em;
+  background: #e0e0e0;
+  box-shadow: 1em 1em 2em #bebebe, -1em -1em 2em #ffffff;
+}
+.section .aboutmeDI .aboutmeDI__right .rightIcon * {
+  font-size: 1.9em;
 }

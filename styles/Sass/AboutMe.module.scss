@@ -35,11 +35,36 @@
 
 
 
-        .abboutmeDI__left{
+        .aboutmeDI__left{
             text-align: left;
-        }
-        li{
+             li{
             padding-left: 35%;
+          }
+        }
+       
+          .aboutmeDI__right{
+            @include flexCenter(column);
+            .rightdiv{
+                @include flexCustom(space-around, center, row);
+            }
+            .rightIcon{
+                margin-top: 1em;
+                width: fit-content;
+                height: fit-content;
+                padding: 1em;
+                transition: box-shadow 400ms;
+             
+                &:hover{
+                    cursor: pointer;
+            border-radius: 0.4em;
+            background: #e0e0e0;
+            box-shadow:  1em 1em 2em #bebebe,
+            -1em -1em 2em #ffffff;
+                }
+                *{
+                    font-size: 1.9em;
+                }
+            }
           }
     }
 

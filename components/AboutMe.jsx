@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "../styles/Sass/AboutMe.module.css"
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const AboutMe = () => {
     return (
@@ -21,9 +22,19 @@ const AboutMe = () => {
                         </ul>
 
                 </div>
-                <div>
+
+                <div className={styles.aboutmeDI__right}>
                 <h4>Socials</h4>
+                <div className={styles.rightdiv}>
+
                 
+                <div className={styles.rightIcon}>
+                    <BsGithub/>
+                </div>
+                <div className={styles.rightIcon}>
+                    <BsLinkedin/>
+                </div>
+                </div>
                 </div>
             </div>
         </section>
