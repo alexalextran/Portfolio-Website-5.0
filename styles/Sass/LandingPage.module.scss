@@ -2,6 +2,7 @@
 
 .section{
     @include fullScreen;
+    
     background: linear-gradient(90deg, rgb(240,240,240),65%, rgb(28,204,91) 35%);
     font-size: 1vw;
     @include flexCenter(row);

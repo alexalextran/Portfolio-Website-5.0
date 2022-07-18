@@ -5,3 +5,11 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+span {
+  color: rgb(28, 204, 91);
+}
+
+li {
+  list-style: none;
+}

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
-
+@import "Sass/variables&functions";
 
 * {
     margin: 0;
@@ -7,5 +7,12 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     
+  }
+
+  span {
+    color: rgb(28, 204, 91);
+  }
+  li{
+    list-style: none;
   }
   
