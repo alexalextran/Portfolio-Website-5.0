@@ -7,25 +7,27 @@
    height: fit-content;
     font-size: 1vw;
     background: radial-gradient(circle,#fafafa 0,#d2d2d2 100%);
-    padding: 4em 5em;
+    padding: 4em 20em;
     @include flexCenter(column);
 
     h1{
         margin: auto 0;
         text-align: center;
-        font-size: 4em;
+        font-size: 3em;
     }
     p{
         margin: 2em 0;
-        font-size: 1.2em;
-        padding: 0 8em;
+        font-size: 1em;
     }
 
     .aboutmeDI{
-        @include flexCenter(row);
         width: 100%;
+        @include flexCustom(center, start, row);
         div{
             width: 50%;
+            height: 100%; 
+            @include flexCustom(center, center, column);
+            
             h4{
                 text-align: center;
                 font-size: 2.5em;
@@ -36,14 +38,15 @@
 
 
         .aboutmeDI__left{
-            text-align: left;
-             li{
-            padding-left: 35%;
-          }
+           li{
+            margin: 1em 0;
+            font-weight: 700;
+           }
         }
+        
        
           .aboutmeDI__right{
-            @include flexCenter(column);
+          
             .rightdiv{
                 @include flexCustom(space-around, center, row);
             }
@@ -52,20 +55,44 @@
                 width: fit-content;
                 height: fit-content;
                 padding: 1em;
-                transition: box-shadow 400ms;
-             
+                transition: box-shadow 400ms, color 400ms;
+                background: #e0e0e0;
+                border-radius: 0.4em;
                 &:hover{
-                    cursor: pointer;
-            border-radius: 0.4em;
-            background: #e0e0e0;
-            box-shadow:  1em 1em 2em #bebebe,
-            -1em -1em 2em #ffffff;
+                cursor: pointer;
+                background: #e0e0e0;
+                box-shadow:  1em 1em 2em #bebebe,-1em -1em 2em #ffffff;
                 }
+                
                 *{
                     font-size: 1.9em;
                 }
             }
+            .github:hover{
+                color: white;
+            }
+            .linkedin:hover{
+                color: rgb(0,119,181);
+            }
           }
     }
 
+    .button{
+        padding: 1em 5em;
+        margin-top: 3em;
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+    }
+    .buttonanimation{
+        background-color: $green;
+        position: absolute;
+        @include absolutefill;
+        z-index: -1;
+        right: 100%;
+        transition: right 400ms;
+    }
+    .button:hover > .buttonanimation{
+        right: 0;
+    }
 }

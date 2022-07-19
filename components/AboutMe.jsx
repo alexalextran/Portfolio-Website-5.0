@@ -16,9 +16,9 @@ const AboutMe = () => {
                 <div className={styles.aboutmeDI__left}>
                     <h4>Details</h4>
                     <ul className={styles.aboutmeDI__details}>
-                        <li>Email: alextran474@gmail.com</li>
-                        <li>Location: Sydney NSW</li>
-                        <li>Graduation Date: 2024</li>
+                        <li><span>Email:</span> alextran474@gmail.com</li>
+                        <li><span>Location:</span> Sydney NSW</li>
+                        <li><span>Graduation</span> Date: 2024</li>
                         </ul>
 
                 </div>
@@ -28,15 +28,19 @@ const AboutMe = () => {
                 <div className={styles.rightdiv}>
 
                 
-                <div className={styles.rightIcon}>
+                <div className={styles.rightIcon +" "+ styles.github}>
                     <BsGithub/>
                 </div>
-                <div className={styles.rightIcon}>
+                <div className={styles.rightIcon +" "+ styles.linkedin}>
                     <BsLinkedin/>
                 </div>
+
                 </div>
                 </div>
+
+             
             </div>
+            <button className={styles.button}><div className={styles.buttonanimation}></div>Download my cv</button>
         </section>
     );
 }
