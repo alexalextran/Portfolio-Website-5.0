@@ -84,6 +84,7 @@
   position: relative;
   z-index: 1;
   background-color: transparent;
+  cursor: pointer;
 }
 .section .buttonanimation {
   background-color: rgb(28, 204, 91);
@@ -95,7 +96,7 @@
   bottom: 0;
   z-index: -1;
   right: 100%;
-  transition: right 400ms;
+  transition: right 600ms;
 }
 .section .button:hover > .buttonanimation {
   right: 0;

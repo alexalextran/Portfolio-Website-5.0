@@ -3,6 +3,7 @@ import Image from 'next/image'
 import AboutMe from '../components/AboutMe'
 import LandingPage from '../components/LandingPage'
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Skills from '../components/Skills';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ParallaxProvider>
        <LandingPage/>
        <AboutMe/>
+       <Skills/>
        </ParallaxProvider>
       </main>
 

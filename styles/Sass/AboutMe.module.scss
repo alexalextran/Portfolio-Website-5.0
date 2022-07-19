@@ -83,6 +83,7 @@
         position: relative;
         z-index: 1;
         background-color: transparent;
+        cursor: pointer;
     }
     .buttonanimation{
         background-color: $green;
@@ -90,7 +91,7 @@
         @include absolutefill;
         z-index: -1;
         right: 100%;
-        transition: right 400ms;
+        transition: right 600ms;
     }
     .button:hover > .buttonanimation{
         right: 0;
