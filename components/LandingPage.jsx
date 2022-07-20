@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../styles/Sass/LandingPage.module.css"
-import profilepic from "../assets/profilepictrans.png"
+import profilepic from "../public/profilepictrans.png"
 import Image from 'next/image'
 import { Parallax } from 'react-scroll-parallax';
 const LandingPage = () => {
