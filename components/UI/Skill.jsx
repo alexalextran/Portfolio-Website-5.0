@@ -7,7 +7,7 @@ const Skill = ({name, img}) => {
     
     return (
         <div className={styles.skill__card}>
-            
+            <p>{name}</p>
             <div className={styles.skill__img}>
            <Image src = {img.src}  height="100%" width="100%" /> 
            </div>
