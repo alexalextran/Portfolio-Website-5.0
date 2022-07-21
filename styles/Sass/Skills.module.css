@@ -12,6 +12,7 @@
   align-items: center;
   flex-direction: column;
   padding: 4em 2em;
+  overflow-x: hidden;
 }
 .section h1 {
   font-size: 3.5em;
@@ -37,7 +38,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  border-radius: 1em;
+  border-radius: 2em;
   flex-wrap: wrap;
   padding: 2em 0;
 }

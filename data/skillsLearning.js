@@ -1,9 +1,9 @@
-import Node from '../public/nodejs.svg'
-import Java from '../public/java.svg'
-import Express from '../public/express.svg'
-import Redux from '../public/redux.svg'
-import MongoDB from '../public/mongodb.svg'
-import SQL from '../public/sql.svg'
+import Node from '../public/skills/nodejs.svg'
+import Java from '../public/skills/java.svg'
+import Express from '../public/skills/express.svg'
+import Redux from '../public/skills/redux.svg'
+import MongoDB from '../public/skills/mongodb.svg'
+import SQL from '../public/skills/sql.svg'
 
  const skillsLearning = [
     {

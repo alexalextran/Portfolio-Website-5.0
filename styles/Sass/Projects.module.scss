@@ -1,0 +1,11 @@
+@import "./variables&functions";
+
+.section{
+    @include fullScreen;
+   height: fit-content;
+    font-size: 1vw;
+    background-color: $darkgray;
+    color: white;
+    @include flexCenter(column);
+    padding: 4em 2em;
+}
