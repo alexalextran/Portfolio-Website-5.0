@@ -1,8 +1,7 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
 import styles from "../styles/Sass/Skills.module.css"
 import Skill from './UI/Skill';
-import skills from '../data/index.js'
+import skillsUse from '../data/skillsUse.js'
+import skillsLearning from "../data/skillsLearning";
 
 
 const Skills = () => {
@@ -22,7 +21,7 @@ const Skills = () => {
                 <h2>What I Use</h2>
                 {
 
-                 skills.map((skills, index) => {
+                skillsUse.map((skills, index) => {
                     
                     let { img } = skills;
                    return (<Skill name={skills.name} img={img[skills.name]} key={index}/> )
@@ -32,6 +31,14 @@ const Skills = () => {
 
             <div>
                 <h2>What I&apos;m Learning</h2>
+                {
+
+skillsLearning.map((skills, index) => {
+    
+    let { img } = skills;
+   return (<Skill name={skills.name} img={img[skills.name]} key={index}/> )
+ })
+}
             </div>
             
             </div>
