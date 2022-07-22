@@ -1,5 +1,6 @@
 import React from 'react';
 import projects from  '../../public/data/projects.js'
+import Image from 'next/image'
 
 export const getStaticPaths = () => {
 
@@ -30,10 +31,11 @@ return{
 }
 
 const Name = ({project}) => {
-   
+   console.log(project)
     return (
         <div>
             {project.name}
+            <Image src={project.img.MaxCozis.src} layout="fixed" height="20px" width="45px"></Image>
         </div>
     );
 }
