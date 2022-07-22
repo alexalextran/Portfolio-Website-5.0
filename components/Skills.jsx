@@ -26,7 +26,7 @@ const Skills = () => {
             <div className={styles.section__wrapper}>
 
             
-            <Parallax translateX={[ -20, 30]} opacity={[0.2, 2]}>
+            <Parallax translateX={[ -20, 2]} opacity={[0.2, 2]}>
             <div className={styles.skills__wrapper}  ref={skillsuse}>
                 <h2>What I Use</h2>
                 {
@@ -40,7 +40,7 @@ const Skills = () => {
             </Parallax>
 
 
-            <Parallax translateX={[ 20, -30]} opacity={[0.2, 2]}>
+            <Parallax translateX={[ 20, -2]} opacity={[0.2, 2]}>
             <div  className={styles.skills__wrapper}  ref={skillslearn}>
                 <h2>What I&apos;m Learning</h2>
                 {

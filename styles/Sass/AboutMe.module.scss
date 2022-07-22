@@ -22,7 +22,7 @@
 
     .aboutmeDI{
         width: 100%;
-        @include flexCustom(center, start, row);
+        @include flexCustom(center, flex-start, row);
         div{
             width: 50%;
             height: 100%; 

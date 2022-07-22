@@ -1,16 +1,22 @@
 import React from 'react';
 import styles from "../styles/Sass/Projects.module.css"
 import projects from  '../data/projects.js'
+import ProjectsCard from './UI/ProjectsCard';
 
 const Projects = () => {
-    console.log(projects)
+  
     return (
-        <div>
+        <div className={styles.section}>
+
+            <h1>Projects</h1>
+            <div className={styles.projectCard__wrapper}>
             {
-                projects.map((project, index) => {
-                return(project.name)
+                projects.map((project) => {
+                    let { img } = project;
+                return(<ProjectsCard key={project.name} name={project.name} img={img["MaxCozis"]} desc={project.desc}/>)
                 })
             }
+             </div>
         </div>
     );
 }
