@@ -28,23 +28,29 @@
   margin: 3em 3em;
   border: 2px solid black;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 }
-.card__wrapper:hover ~ .card__overlay, .card__wrapper:focus ~ .card__overlay {
+.card__wrapper:hover > .card__overlay, .card__wrapper:focus > .card__overlay {
   transform: translate3d(0, 0, 0);
 }
-.card__wrapper:hover ~ .card__overlay .card__title, .card__wrapper:focus ~ .card__overlay .card__title {
+.card__wrapper:hover > .card__overlay .card__title, .card__wrapper:focus > .card__overlay .card__title {
   transform: translate3d(0, 0, 0);
 }
-.card__wrapper:hover ~ .card__overlay p, .card__wrapper:focus ~ .card__overlay p {
+.card__wrapper:hover > .card__overlay p, .card__wrapper:focus > .card__overlay p {
   opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.card__wrapper:hover .img__wrapper {
+  filter: blur(0.3em) !important;
+  transform: scale(1.1) !important;
 }
 
 .img__wrapper {
+  transition: filter 300ms, transform 300ms;
   position: relative;
   width: 100% !important;
   height: 100% !important;
-  background-color: aqua;
 }
 
 .card__overlay {
@@ -54,16 +60,16 @@
   top: 0;
   left: 0;
   transition: transform 300ms;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
   transform: translate3d(0, 100%, 0);
 }
+.card__overlay p {
+  opacity: 0;
+  transition: opacity 500ms 100ms;
+}
 .card__overlay .card__title {
-  background-color: gray;
+  text-align: center;
+  background-color: rgb(28, 204, 91);
   transition: transform 100ms;
   transform: translate3d(0, -100%, 0);
-}
-
-.card__wrapper:hover > .card__overlay,
-.card__overlay:hover > .card__title {
-  transform: translate3d(0, 0, 0);
 }
