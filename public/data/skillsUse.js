@@ -1,11 +1,11 @@
-import HTML from '../public/skills/html.png'
-import CSS from '../public/skills/css.svg'
-import SASS from '../public/skills/sass.svg'
-import Javascript from '../public/skills/js.svg'
-import React from '../public/skills/react.svg'
-import FireBase from '../public/skills/firebase.svg'
-import Nextjs from '../public/skills/nextjs.svg'
-import Git from '../public/skills/git.svg'
+import HTML from '../skills/html.png'
+import CSS from '../skills/css.svg'
+import SASS from '../skills/sass.svg'
+import Javascript from '../skills/js.svg'
+import React from '../skills/react.svg'
+import FireBase from '../skills/firebase.svg'
+import Nextjs from '../skills/nextjs.svg'
+import Git from '../skills/git.svg'
 
 
  const skillsUse = [

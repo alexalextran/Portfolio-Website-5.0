@@ -1,7 +1,7 @@
 import styles from "../styles/Sass/Skills.module.css"
 import Skill from './UI/Skill';
-import skillsUse from '../data/skillsUse.js'
-import skillsLearning from "../data/skillsLearning";
+import skillsUse from '../public/data/skillsUse.js'
+import skillsLearning from "../public/data/skillsLearning";
 import { Parallax } from 'react-scroll-parallax';
 import { useRef } from "react";
 

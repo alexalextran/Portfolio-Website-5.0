@@ -1,4 +1,4 @@
-import MaxCozis from '../public/projects/MaxCozis.jpg'
+import MaxCozis from '../projects/MaxCozis.png'
 
 const projects = [
     {
