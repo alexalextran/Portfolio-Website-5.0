@@ -1,6 +1,9 @@
 import React from 'react';
 import projects from  '../../public/data/projects.js'
 import Image from 'next/image'
+import ProjectPurpose from '../../components/UI/ProjectPurpose.jsx';
+import ProjectStack from '../../components/UI/ProjectStack.jsx';
+import ProjectIssues from '../../components/UI/ProjectIssues.jsx';
 
 export const getStaticPaths = () => {
 
@@ -34,7 +37,19 @@ const Name = ({project}) => {
    console.log(project)
     return (
         <div>
-            {project.name}
+            <h1>{project.name}</h1>
+            <p>{project.desc}</p>
+            <div>
+                <div>
+                    <h4>Stack</h4> 
+                    <h4>Links</h4>
+                </div>
+            </div>
+            
+            <ProjectPurpose/>
+            <ProjectStack/>
+            <ProjectIssues/>
+         
             <Image src={project.img.MaxCozis.src} layout="fixed" height="20px" width="45px"></Image>
         </div>
     );
