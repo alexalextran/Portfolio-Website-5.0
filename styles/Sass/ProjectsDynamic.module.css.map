@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAA;EC8FN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;ED7FX,MAAM,EAAE,WAAW;EAClB,SAAS,EAAE,GAAG;EACd,UAAU,EAAE,gDAA8C;EAC1D,OAAO,EAAE,SAAS;CActB;;AAnBD,AAOI,QAPI,CAOJ,EAAE,CAAA;EACE,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG;CACnB;;AAVL,AAWI,QAXI,CAWJ,KAAK,CAAA;EACD,KAAK,EAAE,IAAI;EACX,cAAc,EAAE,MAAM;CACzB",
+    "sources": [
+        "ProjectsDynamic.module.scss",
+        "_variables&functions.scss"
+    ],
+    "names": [],
+    "file": "ProjectsDynamic.module.css"
+}

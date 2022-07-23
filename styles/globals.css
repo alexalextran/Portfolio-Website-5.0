@@ -2,14 +2,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 span {
-  color: rgb(28, 204, 91);
+  color: #1ccc5b;
 }
 
 li {
   list-style: none;
 }
+/*# sourceMappingURL=globals.css.map */

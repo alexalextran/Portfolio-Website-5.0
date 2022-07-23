@@ -4,6 +4,7 @@ import Image from 'next/image'
 import ProjectPurpose from '../../components/UI/ProjectPurpose.jsx';
 import ProjectStack from '../../components/UI/ProjectStack.jsx';
 import ProjectIssues from '../../components/UI/ProjectIssues.jsx';
+import styles from "../../styles/Sass/ProjectsDynamic.module.css"
 
 export const getStaticPaths = () => {
 
@@ -34,11 +35,11 @@ return{
 }
 
 const Name = ({project}) => {
-   console.log(project)
+ 
     return (
-        <div>
+        <div className={styles.section}>
             <h1>{project.name}</h1>
-            <p>{project.desc}</p>
+            <p className={styles.desc}>{project.desc}</p>
             <div>
                 <div>
                     <h4>Stack</h4> 

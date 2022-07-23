@@ -7,50 +7,93 @@
   font-size: 1vw;
   background: radial-gradient(circle, #fafafa 0, #d2d2d2 100%);
   padding: 4em 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .section h1 {
   margin: auto 0;
   text-align: center;
   font-size: 3em;
 }
+
 .section p {
   margin: 2em 0;
   font-size: 1em;
 }
+
 .section .aboutmeDI {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .section .aboutmeDI div {
   width: 50%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .section .aboutmeDI div h4 {
   text-align: center;
   font-size: 2.5em;
   font-weight: 400;
 }
+
 .section .aboutmeDI .aboutmeDI__left li {
   margin: 1em 0;
   font-weight: 700;
 }
+
 .section .aboutmeDI .aboutmeDI__right .rightdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .section .aboutmeDI .aboutmeDI__right .rightIcon {
   margin-top: 1em;
   width: -webkit-fit-content;
@@ -60,24 +103,33 @@
   height: -moz-fit-content;
   height: fit-content;
   padding: 1em;
+  -webkit-transition: color 400ms, -webkit-box-shadow 400ms;
+  transition: color 400ms, -webkit-box-shadow 400ms;
   transition: box-shadow 400ms, color 400ms;
+  transition: box-shadow 400ms, color 400ms, -webkit-box-shadow 400ms;
   background: #e0e0e0;
   border-radius: 0.4em;
 }
+
 .section .aboutmeDI .aboutmeDI__right .rightIcon:hover {
   cursor: pointer;
   background: #e0e0e0;
-  box-shadow: 1em 1em 2em #bebebe, -1em -1em 2em #ffffff;
+  -webkit-box-shadow: 1em 1em 2em #bebebe,-1em -1em 2em #ffffff;
+          box-shadow: 1em 1em 2em #bebebe,-1em -1em 2em #ffffff;
 }
+
 .section .aboutmeDI .aboutmeDI__right .rightIcon * {
   font-size: 1.9em;
 }
+
 .section .aboutmeDI .aboutmeDI__right .github:hover {
   color: white;
 }
+
 .section .aboutmeDI .aboutmeDI__right .linkedin:hover {
-  color: rgb(0, 119, 181);
+  color: #0077b5;
 }
+
 .section .button {
   padding: 1em 5em;
   margin-top: 3em;
@@ -86,8 +138,9 @@
   background-color: transparent;
   cursor: pointer;
 }
+
 .section .buttonanimation {
-  background-color: rgb(28, 204, 91);
+  background-color: #1ccc5b;
   position: absolute;
   position: absolute;
   top: 0;
@@ -96,8 +149,11 @@
   bottom: 0;
   z-index: -1;
   right: 100%;
+  -webkit-transition: right 600ms;
   transition: right 600ms;
 }
+
 .section .button:hover > .buttonanimation {
   right: 0;
 }
+/*# sourceMappingURL=AboutMe.module.css.map */
