@@ -40,18 +40,25 @@ const Name = ({project}) => {
         <div className={styles.section}>
             <h1>{project.name}</h1>
             <p className={styles.desc}>{project.desc}</p>
-            <div>
-                <div>
-                    <h4>Stack</h4> 
-                    <h4>Links</h4>
+         
+                <div className={styles.stackLink}>
+                    <div className={styles.stack}>
+                       <h4>Stack</h4>  
+
+                    </div>
+                    
+                    <div className={styles.link}>
+                       <h4>Links</h4> 
+                       
+                    </div>
+                    
                 </div>
-            </div>
             
             <ProjectPurpose/>
             <ProjectStack/>
             <ProjectIssues/>
          
-            <Image src={project.img.MaxCozis.src} layout="fixed" height="20px" width="45px"></Image>
+            <Image src={project.img.MaxCozis.src} layout="fixed" height="20px" width="45px" alt='nice'></Image>
         </div>
     );
 }

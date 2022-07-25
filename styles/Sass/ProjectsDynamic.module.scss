@@ -16,6 +16,14 @@
         letter-spacing: 0.15em;
     }
 
+    .stackLink{
+        display: flex;
+        flex-direction: column;
+        div{
+            margin: 1em 0;
+        }
+    }
+
 
 
 

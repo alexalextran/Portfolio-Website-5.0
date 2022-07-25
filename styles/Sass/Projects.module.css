@@ -7,37 +7,18 @@
   font-size: 1vw;
   background: radial-gradient(circle, #fafafa 0, #d2d2d2 100%);
   padding: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projectCard__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -49,35 +30,24 @@
   position: relative;
   overflow: hidden;
 }
-
 .card__wrapper:hover > .card__overlay, .card__wrapper:focus > .card__overlay {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-
 .card__wrapper:hover > .card__overlay .card__title, .card__wrapper:focus > .card__overlay .card__title {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-
 .card__wrapper:hover > .card__overlay p, .card__wrapper:focus > .card__overlay p {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .card__wrapper:hover .img__wrapper {
-  -webkit-filter: blur(0.3em) !important;
-          filter: blur(0.3em) !important;
-  -webkit-transform: scale(1.1) !important;
-          transform: scale(1.1) !important;
+  filter: blur(0.3em) !important;
+  transform: scale(1.1) !important;
 }
 
 .img__wrapper {
-  -webkit-transition: -webkit-filter 300ms, -webkit-transform 300ms;
-  transition: -webkit-filter 300ms, -webkit-transform 300ms;
   transition: filter 300ms, transform 300ms;
-  transition: filter 300ms, transform 300ms, -webkit-filter 300ms, -webkit-transform 300ms;
   position: relative;
   width: 100% !important;
   height: 100% !important;
@@ -89,29 +59,17 @@
   height: 100%;
   top: 0;
   left: 0;
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
   transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
   background-color: rgba(255, 255, 255, 0.3);
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
 }
-
 .card__overlay p {
   opacity: 0;
-  -webkit-transition: opacity 500ms 100ms;
   transition: opacity 500ms 100ms;
 }
-
 .card__overlay .card__title {
   text-align: center;
-  background-color: #1ccc5b;
-  -webkit-transition: -webkit-transform 100ms;
-  transition: -webkit-transform 100ms;
+  background-color: rgb(28, 204, 91);
   transition: transform 100ms;
-  transition: transform 100ms, -webkit-transform 100ms;
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
 }
-/*# sourceMappingURL=Projects.module.css.map */
