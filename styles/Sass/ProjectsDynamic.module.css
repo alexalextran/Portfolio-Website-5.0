@@ -28,3 +28,17 @@
 .section .stack__array *, .section .link * {
   margin-right: 1em;
 }
+.section .dynamicdata__div {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: row;
+}
+.section .dynamicdata__wrapper .dynamicdata__div:nth-child(odd) {
+  flex-direction: row-reverse;
+  background-color: aqua;
+}
+.section .dynamicdata__image {
+  width: 6em;
+  height: 6em;
+  position: relative;
+}

@@ -1,9 +1,8 @@
 import React from 'react';
 import projects from  '../../public/data/projects.js'
 import Image from 'next/image'
-import ProjectPurpose from '../../components/UI/ProjectPurpose.jsx';
-import ProjectStack from '../../components/UI/ProjectStack.jsx';
-import ProjectIssues from '../../components/UI/ProjectIssues.jsx';
+import ProjectData from '../../components/UI/ProjectData.jsx';
+
 import styles from "../../styles/Sass/ProjectsDynamic.module.css"
 import { BsGithub } from 'react-icons/bs';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
@@ -71,11 +70,16 @@ const Name = ({project}) => {
                     
                 </div>
             
-            <ProjectPurpose/>
-            <ProjectStack/>
-            <ProjectIssues/>
+            <div className={styles.dynamicdata__wrapper}>
+            <ProjectData title='Purpose and Direction' text={project.projectdata.purpose} img={project.projectdata.purposeimg}/>
+          
+            <ProjectData title='Stack Explanation' text={project.projectdata.stack} img={project.projectdata.stackimg}/>
+     
+            <ProjectData title='Issues and Lessons Learnt' text={project.projectdata.issues} img={project.projectdata.issuesimg}/>
+            </div>
+          
          
-            <Image src={project.img.MaxCozis.src} layout="fixed" height="20px" width="45px" alt='nice'></Image>
+           
         </div>
     );
 }

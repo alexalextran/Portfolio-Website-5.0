@@ -34,7 +34,22 @@
         @extend .stack__array;
     }
 
+    .dynamicdata__div{
+        margin: 2em 0;
+        display: flex;
+        flex-direction: row;
+    }
 
+    .dynamicdata__wrapper .dynamicdata__div:nth-child(odd){
+        flex-direction: row-reverse;
+        background-color: aqua;
+    }
+
+    .dynamicdata__image{
+        width: 6em;
+        height: 6em;
+        position: relative;
+    }
 
 
 
