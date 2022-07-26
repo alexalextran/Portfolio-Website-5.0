@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <div className={styles.section}>
 
-            <h1>Projects</h1>
+            <h1 className={styles.projectTitle}>Projects</h1>
             <div className={styles.projectCard__wrapper}>
             {
                 projects.map((project) => {

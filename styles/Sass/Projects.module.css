@@ -12,6 +12,9 @@
   align-items: center;
   flex-direction: column;
 }
+.section .projectTitle {
+  font-size: 3em;
+}
 
 .projectCard__wrapper {
   display: flex;

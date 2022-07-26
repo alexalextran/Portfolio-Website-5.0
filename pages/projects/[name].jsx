@@ -78,7 +78,7 @@ const Name = ({project}) => {
             <ProjectData title='Issues and Lessons Learnt' text={project.projectdata.issues} img={project.projectdata.issuesimg}/>
             </div>
           
-         
+            <Link href={'/'}>Back Home</Link>
            
         </div>
     );

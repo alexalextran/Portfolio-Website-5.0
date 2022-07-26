@@ -4,7 +4,7 @@
     @include fullScreen;
     height: fit-content;
      font-size: 1vw;
-     background: radial-gradient(circle,#fafafa 0,#d2d2d2 100%);
+     background: radial-gradient(circle,#fafafa 0,#f1f0f0 100%);
      padding: 10em 15em;
      
     h1{
@@ -35,19 +35,27 @@
     }
 
     .dynamicdata__div{
-        margin: 2em 0;
+        margin: 5em 0;
         display: flex;
         flex-direction: row;
+        div{
+            width: 50%;
+        }
+       
+        div:nth-child(1){
+            text-align: left;
+            padding: 0em 2em;
+        }
     }
 
     .dynamicdata__wrapper .dynamicdata__div:nth-child(odd){
         flex-direction: row-reverse;
-        background-color: aqua;
+    
     }
 
     .dynamicdata__image{
-        width: 6em;
-        height: 6em;
+        width: 100%;
+        height: 18em;
         position: relative;
     }
 
