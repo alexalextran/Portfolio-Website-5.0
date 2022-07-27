@@ -4,6 +4,7 @@ import CountUp, { useCountUp } from "react-countup";
 const Statistics = () => {
 
   const [apiData, setapiData] = useState(0)
+  const [loaded, setloaded] = useState(false)
   
 
   useEffect(() => {
@@ -12,6 +13,7 @@ const Statistics = () => {
       const rs = await fetch('https://api.github.com/users/alexalextran/repos');
       const myJson = await rs.json();
       setapiData(myJson.length)
+      setloaded(true)
     }
     userAction()
 
@@ -25,12 +27,7 @@ const Statistics = () => {
   let difference = currentDate.getTime() - startDate.getTime();
 
 
-  useCountUp({
-    ref: "counter",
-    start:0,
-    end: Math.floor(difference / (1000 * 3600 * 24)),
-    enableScrollSpy: true
-  });
+ 
 
 
 
@@ -41,13 +38,12 @@ const Statistics = () => {
             
             <div>
             
-                <h1 id='counter'>0</h1>
-         
+                <h1>{loaded ? <CountUp start={0} end={Math.floor(difference / (1000 * 3600 * 24))} enableScrollSpy/> : 0}</h1>
                 <h2>Days Programming</h2>
             </div>
 
             <div>
-                <h1>{apiData}</h1>
+                <h1>{loaded ? <CountUp start={0} end={apiData} enableScrollSpy/> : 0}</h1>
                 <h2>Total Github Repositories</h2>
             </div>
             
