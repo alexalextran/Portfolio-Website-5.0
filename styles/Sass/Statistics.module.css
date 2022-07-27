@@ -1,0 +1,25 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1vw;
+  background: rgb(30, 30, 30);
+  padding: 4em 15em;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.section div {
+  text-align: center;
+}
+.section div h1 {
+  color: rgb(28, 204, 91);
+  font-size: 4em;
+}
+.section div h2 {
+  border-top: 0.1em solid rgb(255, 255, 255);
+}

@@ -5,23 +5,10 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Statistics from '../components/Statistics';
-import { useEffect, useState } from 'react';
+import Timeline from '../components/Timeline';
 
 export default function Home() {
 
-  const [loading, setloading] = useState(true)
-
-  useEffect(() => {
-    
-   async function userAction() {
-      const rs = await fetch('https://api.github.com/users/alexalextran/repos');
-      const myJson = await rs.json();
-      setloading(true)
-      console.log(myJson.length)
-    }
-    userAction()
-    
-  }, [loading])
 
   return (
     <section>
@@ -38,6 +25,7 @@ export default function Home() {
        <Skills/>
        <Projects />
        <Statistics/>
+       <Timeline/>
        </ParallaxProvider>
       </main>
 
