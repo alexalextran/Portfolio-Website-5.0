@@ -82,9 +82,13 @@ p{
 }
 
 .carouselPhoto{
-  width: 10em;
-  height: 8em;
+  width: 100%;
+  height: 25em;
   position: relative;
 }
 
+.carousel{
+  width: 50em;
+  height: fit-content;
+}
 

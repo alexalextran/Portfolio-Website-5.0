@@ -10,8 +10,11 @@ const CarouselComponent = ({currentProject}) => {
         return obj.name === currentProject;
       }))
 
+
+
+
     return (
-        <Carousel>
+        <Carousel className={styles.carousel}>
         {
             array[0].carouselPhotos.map( (item, index) => <Item key={index} photo={item} /> )
         }
@@ -26,12 +29,12 @@ function Item({photo})
 
 
     return (
-        <>
-            <div className={styles.carouselPhoto}>
-                <Image src={photo[bruh].src} layout='fill' ></Image>
-            </div> 
-            <p>NICEEEEEEEEEEEEEEEE</p>
-            </>
+       
+        <div className={styles.carouselPhoto}>
+            <Image src={photo[bruh].src} layout='fill'></Image>
+        </div>
+   
+  
     )
 }
 
