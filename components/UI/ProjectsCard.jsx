@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from "../../styles/Sass/Projects.module.css"
 import Link from 'next/link'
 import { Parallax } from 'react-scroll-parallax';
-const ProjectsCard = ({name, img, desc}) => {
+const ProjectsCard = ({name, img, desc, setcurrentProject}) => {
 
     return ( 
     <Parallax  opacity={[0.2, 2]}>
@@ -22,6 +22,7 @@ const ProjectsCard = ({name, img, desc}) => {
             </div>
            
         </div>
+        <button onClick={() =>  setcurrentProject(name)}>Click me</button>
         </Parallax>
     );
 }

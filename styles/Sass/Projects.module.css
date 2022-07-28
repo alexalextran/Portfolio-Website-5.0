@@ -76,3 +76,9 @@
   transition: transform 100ms;
   transform: translate3d(0, -100%, 0);
 }
+
+.carouselPhoto {
+  width: 10em;
+  height: 8em;
+  position: relative;
+}

@@ -1,4 +1,6 @@
 import MaxCozis from '../projects/MaxCozis.png'
+import MaxCozis2 from '../projects/MaxCozis2.png'
+import MaxCozis3 from '../projects/MaxCozis3.png'
 
 const projects = [
     {
@@ -15,8 +17,11 @@ const projects = [
             stackimg: {MaxCozis},
             issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
             issuesimg: {MaxCozis}
-     
-        }
+        },
+        carouselPhotos: [
+             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+        ]
+        
     },
     {
         name: 'Memory Game V2',
@@ -32,7 +37,10 @@ const projects = [
             stackimg: {MaxCozis},
             issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
             issuesimg: {MaxCozis}
-        }
+        },
+        carouselPhotos: [
+             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+        ]
     },
     {
         name: 'Memories',
@@ -48,7 +56,10 @@ const projects = [
             stackimg: {MaxCozis},
             issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
             issuesimg: {MaxCozis}
-        }
+        },
+        carouselPhotos: [
+             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+        ]
     },
     {
         name: 'A- Academy',
@@ -64,7 +75,10 @@ const projects = [
             stackimg: {MaxCozis},
             issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
             issuesimg: {MaxCozis}
-        }
+        },
+        carouselPhotos: [
+             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+        ]
     },
     {
         name: 'Notflix',
@@ -80,7 +94,10 @@ const projects = [
             stackimg: {MaxCozis},
             issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
             issuesimg: {MaxCozis}
-        }
+        },
+        carouselPhotos: [
+             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+        ]
     },
     {
         name: 'E-Commerce Store',
@@ -96,7 +113,10 @@ const projects = [
             stackimg: {MaxCozis},
             issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
             issuesimg: {MaxCozis}
-        }
+        },
+        carouselPhotos: [
+             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+        ]
     },
     {
         name: 'Java JSP Mock Store',
@@ -112,7 +132,10 @@ const projects = [
             stackimg: {MaxCozis},
             issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
             issuesimg: {MaxCozis}
-        }
+        },
+        carouselPhotos: [
+             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+        ]
     },
    
 ]
