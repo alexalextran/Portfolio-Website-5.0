@@ -1,6 +1,7 @@
 import MaxCozis from '../projects/MaxCozis.png'
 import MaxCozis2 from '../projects/MaxCozis2.png'
 import MaxCozis3 from '../projects/MaxCozis3.png'
+import MemoryGame from '../projects/MemoryGame.png'
 
 const projects = [
     {
@@ -25,7 +26,7 @@ const projects = [
     },
     {
         name: 'Memory Game V2',
-        img: {MaxCozis},
+        img: {MemoryGame},
         desc: 'diowajdioad adpwa jdiopawjdioawjdioad opaid opaiwdad iopjwa opd apdoijwaiod aoidj aiopwd aiod jad jsaklda jwdlka w da daw doipawd aw da dawdj awiodadidja wodwad awoid jaoid jaiowd awi awoid jaiod aoid awoid jaiwjdawio dawio i aiod aoidd awda wd awaw waa',
         stack: ['HTML', 'CSS', 'JS'],
         linkgit: 'https://github.com/alexalextran/react-adash',
@@ -39,7 +40,7 @@ const projects = [
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
-             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+             {MemoryGame}, {MaxCozis2}, {MaxCozis3}
         ]
     },
     {

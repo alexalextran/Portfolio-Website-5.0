@@ -11,7 +11,7 @@ const ProjectsCard = ({name, img, desc, setcurrentProject}) => {
 
           
             <div className={styles.img__wrapper}>
-           <Image src = {img.src} layout='fill' alt='projectImage' /> 
+           <Image src = {img} layout='fill' alt='projectImage' /> 
            </div> 
             
 

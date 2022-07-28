@@ -19,8 +19,10 @@ const Projects = () => {
             {
                 projects.map((project) => {
                 
-                    let { img } = project;
-                return(<ProjectsCard setcurrentProject={setcurrentProject} key={project.name} name={project.name} img={img["MaxCozis"]} desc={project.desc}/>)
+                    var bruh = Object.keys(project.img)[0]
+                  
+                    
+                return(<ProjectsCard setcurrentProject={setcurrentProject} key={project.name} name={project.name} img={project.img[bruh]} desc={project.desc}/>)
                 })
             }
              </div>

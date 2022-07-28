@@ -14,7 +14,7 @@ const CarouselComponent = ({currentProject}) => {
 
 
     return (
-        <Carousel className={styles.carousel}>
+        <Carousel navButtonsAlwaysVisible className={styles.carousel}>
         {
             array[0].carouselPhotos.map( (item, index) => <Item key={index} photo={item} /> )
         }
@@ -31,7 +31,7 @@ function Item({photo})
     return (
        
         <div className={styles.carouselPhoto}>
-            <Image src={photo[bruh].src} layout='fill'></Image>
+            <Image src={photo[bruh].src} layout='fill' alt='carouselimage'></Image>
         </div>
    
   
