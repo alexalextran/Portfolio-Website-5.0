@@ -6,7 +6,7 @@ import { Parallax } from 'react-scroll-parallax';
 const ProjectsCard = ({name, img, desc, setcurrentProject}) => {
 
     return ( 
-    <Parallax  opacity={[0.2, 2]}>
+    <Parallax  /*opacity={[0.2, 2]}*/>
         <div className={styles.card__wrapper}>
 
           
