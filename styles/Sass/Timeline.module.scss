@@ -4,9 +4,22 @@
     @include fullScreen;
     height: fit-content;
      font-size: 1vw;
+     padding: 8em 0;
      background: radial-gradient(circle,#fafafa 0,#f7f6f6 100%);
      position: relative;
+    text-align: center;
+}
+
+.title{
+    z-index: 3;
+    position: absolute;
+    background-color: $green;
+    font-size: 2em;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
     
+
 }
 
 .section:after{
@@ -19,7 +32,7 @@
 
 .container{
    position: relative;
-   padding: 4em 9em;
+   padding: 4em 9em 0em 9em;
    width: 50%;
    &::after{
     content: '';
