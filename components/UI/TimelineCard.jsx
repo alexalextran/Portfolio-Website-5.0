@@ -1,13 +1,20 @@
 import React from 'react';
 import styles from "../../styles/Sass/Timeline.module.css"
+import { Parallax } from 'react-scroll-parallax';
 
-const TimelineCard = ({direction}) => {
+const TimelineCard = ({direction, title, date, text, parllaxValues}) => {
+
     return (
+     
+        
         <div className={styles.container + " " + direction}>
+        <Parallax  translateX={[parllaxValues, `${(parseInt(parllaxValues)*-1).toString()}%`]} speed={10}>
         <div>
-        <h2>1990 i am born once again lmao!!!!!!!</h2>
-        <p>This is even more content awdjwajdwoai dawodj adadawd waidja odawjd </p>
+        <h2>{title}</h2>
+        <h4>{date}</h4>
+        <p>{text}</p>
         </div>
+        </Parallax>
        </div>
     );
 }

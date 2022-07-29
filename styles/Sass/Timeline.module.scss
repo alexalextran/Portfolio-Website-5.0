@@ -6,7 +6,6 @@
      font-size: 1vw;
      background: radial-gradient(circle,#fafafa 0,#f7f6f6 100%);
      position: relative;
-     height: 100vh;
     
 }
 
@@ -20,21 +19,39 @@
 
 .container{
    position: relative;
-   background-color: lightblue;
-   padding: 2em;
+   padding: 4em 9em;
    width: 50%;
+   &::after{
+    content: '';
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  right: -1.25em;
+  background-color: white;
+  border: 0.3em solid $green;
+  top: 40%;
+  border-radius: 50%;
+  z-index: 1;
+   }
    div{
-    background-color: white;
+    color: white;
+    background-color: $darkgray;
     border-radius: 1em;
-    padding: 5em 2em;
+    padding: 1em 1em;
     text-align: center;
+    position: relative;
    }
 }
 
+
 .left{
-    left: 0%;   
+    left: 0%;  
 }
 
 .right{
-    right: -50%
+    left: 50%;
 }
+
+.right::after {
+    left: -1.25em;
+  }
