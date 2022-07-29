@@ -1,0 +1,40 @@
+@import "./variables&functions";
+
+.section{
+    @include fullScreen;
+    height: fit-content;
+     font-size: 1vw;
+     background: radial-gradient(circle,#fafafa 0,#f7f6f6 100%);
+     position: relative;
+     height: 100vh;
+    
+}
+
+.section:after{
+    content: '';
+    height: 100%;
+    width: 0.5em;
+    background-color: $green;
+    @include absolutecenter;
+}
+
+.container{
+   position: relative;
+   background-color: lightblue;
+   padding: 2em;
+   width: 50%;
+   div{
+    background-color: white;
+    border-radius: 1em;
+    padding: 5em 2em;
+    text-align: center;
+   }
+}
+
+.left{
+    left: 0%;   
+}
+
+.right{
+    right: -50%
+}

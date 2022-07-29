@@ -1,0 +1,43 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1vw;
+  background: radial-gradient(circle, #fafafa 0, #f7f6f6 100%);
+  position: relative;
+  height: 100vh;
+}
+
+.section:after {
+  content: "";
+  height: 100%;
+  width: 0.5em;
+  background-color: rgb(28, 204, 91);
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.container {
+  position: relative;
+  background-color: lightblue;
+  padding: 2em;
+  width: 50%;
+}
+.container div {
+  background-color: white;
+  border-radius: 1em;
+  padding: 5em 2em;
+  text-align: center;
+}
+
+.left {
+  left: 0%;
+}
+
+.right {
+  right: -50%;
+}

@@ -1,26 +1,15 @@
 import React from 'react';
+import styles from "../styles/Sass/Timeline.module.css"
+import TimelineCard from './UI/TimelineCard';
 
 const Timeline = () => {
     return (
-        <div>
-            text
-            text
-            text
-            text
-            text
-            text
-            text
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+        <section className={styles.section}>
+
+           <TimelineCard direction={styles.left}/>
+           <TimelineCard direction={styles.right}/>
           
-        </div>
+        </section>
     );
 }
 
