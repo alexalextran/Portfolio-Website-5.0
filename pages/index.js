@@ -6,6 +6,7 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Statistics from '../components/Statistics';
 import Timeline from '../components/Timeline';
+import Footer from '../components/Footer';
 
 export default function Home() {
 
@@ -27,6 +28,7 @@ export default function Home() {
        <Statistics/>
        <Timeline/>
        </ParallaxProvider>
+       <Footer />
       </main>
 
     </section>

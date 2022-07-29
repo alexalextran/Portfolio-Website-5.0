@@ -19,7 +19,7 @@ const AboutMe = () => {
                     <ul className={styles.aboutmeDI__details}>
                         <li><span>Email:</span> alextran474@gmail.com</li>
                         <li><span>Location:</span> Sydney NSW</li>
-                        <li><span>Graduation</span> Date: 2024</li>
+                        <li><span>Graduation Date:</span> 2024</li>
                         </ul>
 
                 </div>

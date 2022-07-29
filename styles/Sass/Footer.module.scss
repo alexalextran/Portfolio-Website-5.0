@@ -1,0 +1,22 @@
+@import "./variables&functions";
+
+
+
+.section{
+    @include fullScreen;
+   height: fit-content;
+    font-size: 1vw;
+    background: $darkgray;
+    padding: 4em 20em;
+    @include flexCenter(column);
+    color: white;
+    text-align: center;
+    *{
+        margin: 1em 0;
+    }
+    a{  
+        cursor: pointer;
+        color: $green;
+        margin: 0 1em;
+    }
+}
