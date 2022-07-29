@@ -69,10 +69,16 @@ transform: translate3d(0, 100%, 0);
 :not(h1){
   padding: 1em;
 }
+a{
+  font-size: 1.5em;
+  color: $green;
+  padding: 1em 1em 0em 0.7em;
+}
 div{
   a{
     padding: 0em 1em 0em 0em;
-    
+    font-size: 1em;
+    color: black;
   }
 }
 

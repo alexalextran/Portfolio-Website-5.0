@@ -18,7 +18,7 @@ const ProjectsCard = ({name, img, desc, setcurrentProject, linkGit, linkSite}) =
             <div className={styles.card__overlay}>
                 <h1 className={styles.card__title}>{name}</h1>
                 <p>{desc}</p>
-                <Link href={`/projects/${name}`}>Full Description --&gt;</Link>
+                <Link href={`/projects/${name}`} className={styles.card__link}>Full Description --&gt;</Link>
                 <div>
                 <a  target="_blank" href={linkGit} rel="noreferrer">Github Repository</a>
                 <a  target="_blank" href={linkSite} rel="noreferrer">Live Site</a>
