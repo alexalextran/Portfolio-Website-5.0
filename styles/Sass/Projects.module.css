@@ -66,6 +66,12 @@
   background-color: rgba(255, 255, 255, 0.3);
   transform: translate3d(0, 100%, 0);
 }
+.card__overlay :not(h1) {
+  padding: 1em;
+}
+.card__overlay div a {
+  padding: 0em 1em 0em 0em;
+}
 .card__overlay p {
   opacity: 0;
   transition: opacity 500ms 100ms;

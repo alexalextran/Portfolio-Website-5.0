@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "../styles/Sass/AboutMe.module.css"
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { FiMail } from 'react-icons/fi';
 
 const AboutMe = () => {
     return (
@@ -28,12 +29,16 @@ const AboutMe = () => {
                 <div className={styles.rightdiv}>
 
                 
-                <div className={styles.rightIcon +" "+ styles.github}>
+                <a href='https://github.com/alexalextran' target="_blank" className={styles.rightIcon +" "+ styles.github} rel="noreferrer">
                     <BsGithub/>
-                </div>
-                <div className={styles.rightIcon +" "+ styles.linkedin}>
+                </a>
+                <a href='https://www.linkedin.com/in/alex-tran-221ba8219' target="_blank" className={styles.rightIcon +" "+ styles.linkedin} rel="noreferrer">
                     <BsLinkedin/>
-                </div>
+                </a>
+
+                <a href="mailto:alextran474@gmail.com" className={styles.rightIcon +" "+ styles.mail}>
+                    <FiMail />
+                </a>
 
                 </div>
                 </div>

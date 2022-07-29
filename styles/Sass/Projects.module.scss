@@ -66,6 +66,16 @@ left: 0;
 transition: transform 300ms;
 background-color: rgba(255,255,255,0.3);
 transform: translate3d(0, 100%, 0);
+:not(h1){
+  padding: 1em;
+}
+div{
+  a{
+    padding: 0em 1em 0em 0em;
+    
+  }
+}
+
 
   
 p{
