@@ -1,9 +1,11 @@
 import MaxCozis from '../projects/MaxCozis.png'
 import MaxCozis2 from '../projects/MaxCozis2.png'
 import MaxCozis3 from '../projects/MaxCozis3.png'
+import MaxCozisIssue from '../projects/MaxCozisIssue.png'
 import MemoryGame from '../projects/MemoryGame.png'
 import MemoryGame2 from '../projects/MemoryGame2.png'
 import MemoryGame3 from '../projects/MemoryGame3.png'
+import MemoryGameIssues from '../projects/MemoryGameIssues.png'
 import Memories from '../projects/Memories.png'
 import Academy from '../projects/Academy.png'
 import Academy2 from '../projects/Academy2.png'
@@ -26,17 +28,17 @@ const projects = [
     {
         name: 'Max-Cozis',
         img: {MaxCozis},
-        desc: 'A website built using firebase and react I comissioned for a friend intended to articulate his artistic talents, the website was intended to allow the client to self manage his artistic works by utilising CRUD functionality for all the works showcased on the site',
+        desc: 'A website built using firebase and react I comissioned for a friend intended to articulate his artistic talents, the website was intended to allow the client to securely self manage his artistic works by utilising CRUD functionality for all the works showcased on the site',
         stack: ['Sass','JavaScript','React', 'Firebase'],
         linkGit: 'https://github.com/alexalextran/max-cozis',
         linkSite: 'https://alexalextran.github.io/max-cozis/',
         projectdata: {
-            purpose: 'texadwadad awdha dwadd awdhgawdauyd agdad',
-            purposeimg: {MaxCozis},
-            stack: ' diawdha diaud adahdu adhad jasdh wkujahd uiw',
-            stackimg: {MaxCozis},
-            issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
-            issuesimg: {MaxCozis}
+            purpose: 'Max-Cozis is a project i developed for the sole purpose of developing a secure application that would allow the user to both showcase his skills and be able to self manage all his works in a simple and intuitive system',
+            purposeimg: {MaxCozis2},
+            stack: 'Since the website is intended to provide a good user experience, react was chosen to build fast and clean UIs as well as this, the application also needed to allow for self sufficient changes while being easy to use for people from a non technical background, which is why firebase was chosen, to allow for real time feedback when updating the works, combined with react this allowed for a simplified system that allowed the user to self manage his own works. As well as this libaries responsible for photo carousels were used to showcase the users artistic works.',
+            stackimg: {MaxCozis3},
+            issues:'One of the biggest issues, is that while there was a login feature, any end user could acess the dashboard through changing the url, which meant it was not fully secure, this is where private routes were implemented, in which if a current user does nto exist, i.e end user has not logged in, then they will be redirected to the login page, this meant that the dashboard that allows the editing of the works was fully secure and could only be acess through a login system that was manage by firebase. As well as this, creating a carousel that accounted for different image sizes and aspect ratios was quite difficult to do in vanilla js/react, hence carousel libaries were implemented to allow for different image sizes',
+            issuesimg: {MaxCozisIssue}
         },
         carouselPhotos: [
              {MaxCozis}, {MaxCozis2}, {MaxCozis3}
@@ -51,12 +53,12 @@ const projects = [
         linkGit: 'https://github.com/alexalextran/memory-game-v2',
         linkSite: 'https://alexalextran.github.io/memory-game-v2/',
         projectdata: {
-            purpose: 'texadwadad awdha dwadd awdhgawdauyd agdad',
-            purposeimg: {MaxCozis},
-            stack: ' diawdha diaud adahdu adhad jasdh wkujahd uiw',
-            stackimg: {MaxCozis},
-            issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
-            issuesimg: {MaxCozis}
+            purpose: 'Memory Game V2 was actually a passion project that was based off the first rendition, Memory Game was built as an interactive game for all my friends to enjoy and also since building regular websites was getting pretty tiresome, hence designing MG2 was vastly different from most of my projects since it was an all original design. It features a competitive leaderboard that compares against time and level and also a customizable grid/playing field that is dynamic',
+            purposeimg: {MemoryGame},
+            stack: 'The first Memory game was built using javascript which worked but has alot of issues including perfomance, since the game was constantly making changes to the DOM it made the game lag several times while playing, hence react was chosen since it allows for quick and non intensive changes to the UI using the virtual DOM. As well as this a promised leaderboard was planned to be a big feature of the game, hence a lightweight database was needed as well as user authentication, thus firebase was chosen for its easy authentication system and non relational DB that was fast and effecient',
+            stackimg: {MemoryGame2},
+            issues:'One of the biggest issues with this project was working with state and rendering, especially when there a multiple istances of state that you have to account for, since at the time i had not learnt redux yet, dealing with multiple instances of state was hard but ultimitely it deepened my understanding of react by a good amount, teaching me about how to manipulate the life cycle if components to change state. Overall it was a challenging but rewarding project and any future renditions will most likely have redux incooporated',
+            issuesimg: {MemoryGameIssues}
         },
         carouselPhotos: [
              {MemoryGame}, {MemoryGame2}, {MemoryGame3}
@@ -70,11 +72,11 @@ const projects = [
         linkGit: 'https://github.com/alexalextran/Memories_MERN',
         linkSite: 'https://alexalextran.github.io/Memories_MERN/',
         projectdata: {
-            purpose: 'texadwadad awdha dwadd awdhgawdauyd agdad',
-            purposeimg: {MaxCozis},
-            stack: ' diawdha diaud adahdu adhad jasdh wkujahd uiw',
+            purpose: 'Memories was my first ever MERN project that i developed under the guidance of a mentor, it was developed as a mock social media application that allows users to share images, it was one of the most important projects as it gave me a first hand experience on developing full stack applications from scratch',
+            purposeimg: {Memories},
+            stack: 'The application was built using nodeJs and expressjs to create a live server which could fetch data from a database i.e mongoDB, mongoDB was chosen since it was a non relational DB that was very easy to use, and react was chosen to allow for fast UI changes',
             stackimg: {MaxCozis},
-            issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
+            issues:'One of the biggest issues from this project was just taking all the new technologies that go into full stack applications like this, and also deployement as unlike other projects, both the back end and the front end had to be deployed independently using herkou and githup pages respectively. This meant that everything from backend to front end to deployment had to be accounted for which made the project much more challenging but in the end it taught me alot of key concepts',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
@@ -89,11 +91,11 @@ const projects = [
         linkGit: 'https://github.com/alexalextran/react-adash',
         linkSite: 'http://aadarshanujacademy.com/',
         projectdata: {
-            purpose: 'texadwadad awdha dwadd awdhgawdauyd agdad',
-            purposeimg: {MaxCozis},
-            stack: ' diawdha diaud adahdu adhad jasdh wkujahd uiw',
+            purpose: 'A- Academy was a developed as a commission for a friend to advertise his online teaching platform, it was intended to allow users to check out his videos with a built in video player and also a built in email system that allows end users to securely send him emails.',
+            purposeimg: {Academy},
+            stack: 'There was originally a older release of A- Academy however the old site was static and was poorly designed so react was chosen as an upgrade to provide a dynamic and interactive UI to help provide a better User Experience',
             stackimg: {MaxCozis},
-            issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
+            issues:'One of the biggest issues with the project was learning how to replace variables with state, or adjusting from pure js to react code since this was my first real react project, which means the codebase still has alot of unesscary boilerplate',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
@@ -108,11 +110,11 @@ const projects = [
         linkGit: 'https://github.com/alexalextran/notflix',
         linkSite: 'https://alexalextran.github.io/notflix/',
         projectdata: {
-            purpose: 'texadwadad awdha dwadd awdhgawdauyd agdad',
-            purposeimg: {MaxCozis},
-            stack: ' diawdha diaud adahdu adhad jasdh wkujahd uiw',
-            stackimg: {MaxCozis},
-            issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
+            purpose: 'Notflix was intended as a personal challenge to attempt and emulate advanced UI, thus netflix was chosen, the project consists of a simple login and registration system and aims to emulate the process of navigating the home page of the netflix website',
+            purposeimg: {Notflix2},
+            stack: 'Since Notflix was chosen to include simple login systems, firebase was chosen as it was very easy to implement a simple login system, as well as this react was chosen to allow for scalability and reusability since netflix has alot of dynamic components that are very similar i.e the home page cards',
+            stackimg: {Notflix},
+            issues:'One of the biggest issues was dealing with the api, since when fetching different shows/movies of different genres tv show objects and movie objects were different to each other, hence trying to find a work aorund and dealing with objects was quite difficult, this resulted in missing images sometimes when loading the page. Thankfully after the project was completed i looked more into objects and destructuring',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [

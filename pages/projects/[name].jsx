@@ -59,10 +59,10 @@ const Name = ({project}) => {
                     
                     <div className={styles.link}>
                        <h4>Links</h4> 
-                       <Link href={`${project.linkgit}`}className={styles.rightIcon +" "+ styles.github}>
+                       <Link href={`${project.linkGit}`}className={styles.rightIcon +" "+ styles.github}>
                         <BsGithub/>
                        </Link>
-                       <Link href={`${project.linksite}`} className={styles.rightIcon +" "+ styles.linkedin}>
+                       <Link href={`${project.linkSite}`} className={styles.rightIcon +" "+ styles.linkedin}>
                         <HiOutlineArrowNarrowRight/>
                        </Link>
 
