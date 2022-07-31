@@ -129,11 +129,11 @@ const projects = [
         linkGit: 'https://github.com/alexalextran/react-ecommerce-practice',
         linkSite: 'https://alexalextran.github.io/react-ecommerce-practice/',
         projectdata: {
-            purpose: 'texadwadad awdha dwadd awdhgawdauyd agdad',
-            purposeimg: {MaxCozis},
-            stack: ' diawdha diaud adahdu adhad jasdh wkujahd uiw',
+            purpose: 'E-commerce store was a web applcation that was developed inorder to get experience developing different types of use cases and in this case it was an online store, it fetches mock api data from a js file to generate fake products to which the user can add to cart',
+            purposeimg: {Ecommerce},
+            stack: 'React was chosen due its reusability for components and the ability to dynamically map data to components, allowing for a scalable store and a responsive UI',
             stackimg: {MaxCozis},
-            issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
+            issues:'One of the biggest issues was learning how to manipulate props in each component since, this at the time i had only started experiementing with react, so learning ',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
@@ -148,11 +148,11 @@ const projects = [
         linkGit: 'https://github.com/alexalextran/Iotbay',
         linkSite: 'https://github.com/alexalextran/Iotbay',
         projectdata: {
-            purpose: 'texadwadad awdha dwadd awdhgawdauyd agdad',
-            purposeimg: {MaxCozis},
-            stack: ' diawdha diaud adahdu adhad jasdh wkujahd uiw',
+            purpose: 'This project was a assignment desiginated for my software development subject for the sole purpose of designing a mock ecommerce application within a group',
+            purposeimg: {JSP},
+            stack: 'Java was chosen due to its OOP principles which allow for ease of use when converting business logic to code, and SQL was chosen since it was integrated to the Netbeans ide that was suggested at the time and also allowed us to contain data on a local server, while html and css were used to build the frontend',
             stackimg: {MaxCozis},
-            issues:'wa duawhdwad awdahwduadjksdhwj dajwdha dhwuhda iudhw',
+            issues:'The hardest aspect of this project was incooprating everything, from using slack, github, netbeans to jsp was all very foreign and while using one individually was not difficult incooporating it all required lots of teamwork and communication to ensure everyone was on the same page, in the end it the project did teach us alot on how to coodinate on desigining applications.',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
