@@ -28,7 +28,7 @@ const projects = [
     {
         name: 'Max-Cozis',
         img: {MaxCozis},
-        desc: 'A website built using firebase and react I comissioned for a friend intended to articulate his artistic talents, the website was intended to allow the client to securely self manage his artistic works by utilising CRUD functionality for all the works showcased on the site',
+        desc: 'A template website built using firebase and react, comissioned for a friend intended to articulate his artistic talents. The site features a dynamic image carousel that fetches all the images from a secure firebase cloud database and also includes a secure dashboard system that allows the user to securely manage all the works through full CRUD functionaility',
         stack: ['Sass','JavaScript','React', 'Firebase'],
         linkGit: 'https://github.com/alexalextran/max-cozis',
         linkSite: 'https://alexalextran.github.io/max-cozis/',
@@ -48,7 +48,7 @@ const projects = [
     {
         name: 'Memory Game V2',
         img: {MemoryGame},
-        desc: 'The second iteration of my original memory game which draws heavy inspiration from the human benchmark, it was built from the ground up using react, it was intended as a project to develop and strengthen my core skills on reacts fundamental concepts based around state, useEffect hooks and child component rendering. Its main feature is a live leaderboard that allows users to compare their highscores',
+        desc: 'The second iteration of memory game two built from the ground up using react and firebase, features a secure google authetication system that is managed by firebase that allows users to login and submit their highscores to a real time leaderboard that ranks players based on score and time respectively, the game also includes a dynamic gridsize that lets players choose their grid size.',
         stack: ['Sass','JavaScript','React', 'Firebase'],
         linkGit: 'https://github.com/alexalextran/memory-game-v2',
         linkSite: 'https://alexalextran.github.io/memory-game-v2/',
@@ -57,7 +57,7 @@ const projects = [
             purposeimg: {MemoryGame},
             stack: 'The first Memory game was built using javascript which worked but has alot of issues including perfomance, since the game was constantly making changes to the DOM it made the game lag several times while playing, hence react was chosen since it allows for quick and non intensive changes to the UI using the virtual DOM. As well as this a promised leaderboard was planned to be a big feature of the game, hence a lightweight database was needed as well as user authentication, thus firebase was chosen for its easy authentication system and non relational DB that was fast and effecient',
             stackimg: {MemoryGame2},
-            issues:'One of the biggest issues with this project was working with state and rendering, especially when there a multiple istances of state that you have to account for, since at the time i had not learnt redux yet, dealing with multiple instances of state was hard but ultimitely it deepened my understanding of react by a good amount, teaching me about how to manipulate the life cycle if components to change state. Overall it was a challenging but rewarding project and any future renditions will most likely have redux incooporated',
+            issues:'One of the biggest issues with this project was working with state and rendering, especially when there a multiple istances of state that you have to account for, since at the time i had not learnt redux yet, dealing with multiple instances of state did get overwhelming at times so to get around this i created a complete diagram of all my child components and state using my whiteboard and so planning it that way allowed me to see which states affected which components. but ultimitely the project deepened my understanding of react by a good amount, teaching me about how to manipulate the life cycle if components to change state. Overall it was a challenging but rewarding project and any future renditions will most likely have redux incooporated',
             issuesimg: {MemoryGameIssues}
         },
         carouselPhotos: [
@@ -67,7 +67,7 @@ const projects = [
     {
         name: 'Memories',
         img: {Memories},
-        desc: 'My first ever MERN Stack project, which introduced me to key concepts such as nodejs, mongoDB and redux to manage and manipulate a database using both backend and frontend concepts',
+        desc: 'A full stack web application intended to mock a social media site, allows users to share pictures and provide captions and tags live. It features a reponsive ui designed using react and a backend server developed using nodejs and express to host and connect to a cloud database managed by mongoDB',
         stack: ['TailWind','JavaScript','React', 'MongoDB', 'NodeJs', 'ExpressJs'],
         linkGit: 'https://github.com/alexalextran/Memories_MERN',
         linkSite: 'https://alexalextran.github.io/Memories_MERN/',
@@ -76,7 +76,7 @@ const projects = [
             purposeimg: {Memories},
             stack: 'The application was built using nodeJs and expressjs to create a live server which could fetch data from a database i.e mongoDB, mongoDB was chosen since it was a non relational DB that was very easy to use, and react was chosen to allow for fast UI changes',
             stackimg: {MaxCozis},
-            issues:'One of the biggest issues from this project was just taking all the new technologies that go into full stack applications like this, and also deployement as unlike other projects, both the back end and the front end had to be deployed independently using herkou and githup pages respectively. This meant that everything from backend to front end to deployment had to be accounted for which made the project much more challenging but in the end it taught me alot of key concepts',
+            issues:'One of the biggest issues from this project was just manageing all the files and folders epspecially for a fullstack application , so inorder to solve this, i seperated all the frontend and backend files into their own folders and then for the backend side of things i followed the MVC blueprint placing all my backend functions into the a controller folder and my schema into a model folder.',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
@@ -86,7 +86,7 @@ const projects = [
     {
         name: 'A- Academy',
         img: {Academy},
-        desc: 'My first independent react project and coincidently my first real exposure with working with a client, this website was designed with user experience as a heavy focus, so concepts such as responsivity and accessibility were heavily focused on, the site also involved live data fetched from youtube api to deliver up to date videos and statistics',
+        desc: 'An offical website commisioned to display and advertise the customers online education courses. The site was developed using react and features a video carousel and live data fetching using youtube api to display a subscriber, view count and also fetch videos and allow them to be viewed in a built in video player',
         stack: ['CSS', 'JavaScript', 'React'],
         linkGit: 'https://github.com/alexalextran/react-adash',
         linkSite: 'http://aadarshanujacademy.com/',
@@ -95,7 +95,7 @@ const projects = [
             purposeimg: {Academy},
             stack: 'There was originally a older release of A- Academy however the old site was static and was poorly designed so react was chosen as an upgrade to provide a dynamic and interactive UI to help provide a better User Experience',
             stackimg: {MaxCozis},
-            issues:'One of the biggest issues with the project was learning how to replace variables with state, or adjusting from pure js to react code since this was my first real react project, which means the codebase still has alot of unesscary boilerplate',
+            issues:'One of the biggest issues with the project was coodinating with the client, since the client did not have a specific design so i asked the client what sort of style he wanted and so he wanted somethign that would articulate his reach and reputation, thus i developed the site with this goal in mind, i developed features such as a subscriber/view counter and also testimonials.',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
@@ -105,7 +105,7 @@ const projects = [
     {
         name: 'Notflix',
         img: {Notflix2},
-        desc: 'My first real experience at emulating another site, this project was designed with design as a priority over function, so the application still involved simple login, registration and movie api fetching features native to Netflix but overall the design process was very enjoyable, studying techniques that netflix employs to provide a well designed UI',
+        desc: 'A react based emulation of Netflix aimed at displaying the home page of Netflix, it allows users basic firebase authentication and also displays trending movies and shows based off a movie api, it also allows for dynamic cards that grant the user further information if needed',
         stack: ['Sass', 'JavaScript', 'React', 'Firebase'],
         linkGit: 'https://github.com/alexalextran/notflix',
         linkSite: 'https://alexalextran.github.io/notflix/',
@@ -114,7 +114,7 @@ const projects = [
             purposeimg: {Notflix2},
             stack: 'Since Notflix was chosen to include simple login systems, firebase was chosen as it was very easy to implement a simple login system, as well as this react was chosen to allow for scalability and reusability since netflix has alot of dynamic components that are very similar i.e the home page cards',
             stackimg: {Notflix},
-            issues:'One of the biggest issues was dealing with the api, since when fetching different shows/movies of different genres tv show objects and movie objects were different to each other, hence trying to find a work aorund and dealing with objects was quite difficult, this resulted in missing images sometimes when loading the page. Thankfully after the project was completed i looked more into objects and destructuring',
+            issues:'One of the biggest issues was dealing with api keys, since the api i used required a key, this meant that hardcoding the key into my code would make the key extremely vunerable so inorder to combat this, i searched around online and discovered that react supported env varibles so after reading up on react documentation i was able to create a process.evn file and secured the api key that way.',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
@@ -124,7 +124,7 @@ const projects = [
     {
         name: 'E-Commerce Store',
         img: {Ecommerce},
-        desc: 'A react application that was developed with the assitance of a mentor, it was developed as a way to demonstrate key react concepts such as dynamic components, passing props to child components and manipulating objects',
+        desc: 'A react mock e-commerce store that allows displays books fetched from a mock api and allows users to add books to a cart and dynamically updates the total and books displayed',
         stack: ['CSS', 'React'],
         linkGit: 'https://github.com/alexalextran/react-ecommerce-practice',
         linkSite: 'https://alexalextran.github.io/react-ecommerce-practice/',
@@ -133,7 +133,7 @@ const projects = [
             purposeimg: {Ecommerce},
             stack: 'React was chosen due its reusability for components and the ability to dynamically map data to components, allowing for a scalable store and a responsive UI',
             stackimg: {MaxCozis},
-            issues:'One of the biggest issues was learning how to manipulate props in each component since, this at the time i had only started experiementing with react, so learning ',
+            issues:'One of the biggest in this project was just learning how to use react, since this project was my first ever react project, eveything still felt very alien to me so i was prone to mistakes, thankfully i was under the guidance of a mentor when completing this, so alot of my mistakes were explained and alot of key concepts that i did not understand, so in the end i understood alot of my mistakes and how to avoid them and in the end learnt that help is always a good idea especially for first time projects',
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
@@ -143,7 +143,7 @@ const projects = [
     {
         name: 'Java JSP Mock Store',
         img: {JSP},
-        desc: 'A full stack application developed within a team for a software development subject that involved using software development practices to plan and develop a full stack web application that allowed users and staff members to manage an online store. The application was built using html, css, java and sql to provide a fully working application that met CRUD requirements',
+        desc: 'A full stack application developed within a team, aimed at emulating an server side e-commerce system that allows users to login, manage their accounts and place orders, it also features a staff management system that alows for full CRUD features. All the data is fully hosted on a local sql database',
         stack: ['HTML', 'CSS', 'Java', 'SQL'],
         linkGit: 'https://github.com/alexalextran/Iotbay',
         linkSite: 'https://github.com/alexalextran/Iotbay',
