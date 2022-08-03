@@ -5,16 +5,30 @@
     height: 5vh;
     position: fixed;
      font-size: 1vw;
-     background: $darkgray;
-     padding: 2em;
+     padding: 1em;
      @include flexCenter(column);
      z-index: 100;
+     transition: background-color 700ms;
      ul{
         width: 100%;
         @include flexCustom(space-around, center, row);
        
         a{
-            color: white;
+            transition: color 700ms;
         }
      }
+    
 }
+
+.navColored{
+    background-color: $darkgray;
+    a{
+        color: $green;
+    }
+ }
+ .transparent{
+    background-color: transparent;
+    a{
+        color: transparent;
+    }
+ }

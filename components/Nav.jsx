@@ -1,9 +1,42 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from "../styles/Sass/Nav.module.css"
 
 const Nav = () => {
+    
+    
+  
+    if (typeof window !== "undefined") {
+        var nav = document.getElementById("nav")
+        var about = document.getElementById("aboutMe")
+
+        console.log(about.getBoundingClientRect().top)
+      
+        document.addEventListener("scroll",  ()=> {  
+            
+            if (document.body.scrollTop >= (about.getBoundingClientRect().top)){
+                nav.classList.add(styles.navColored);
+                nav.classList.remove(styles.transparent);
+             } 
+             else {
+                nav.classList.add(styles.transparent);
+                nav.classList.remove(styles.navColored);
+             }
+
+        });  
+
+   
+    };
+
+      
+   
+    
+
+
+
+   
+    
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="nav">
             <ul>
                 <li>
                     <a href='#aboutMe'>About Me</a>
