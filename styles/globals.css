@@ -2,12 +2,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5vh;
 }
 
 span {
-  color: rgb(28, 204, 91);
+  color: #1ccc5b;
 }
 
 li {
@@ -17,3 +23,4 @@ li {
 a:active, a, a:focus {
   color: black;
 }
+/*# sourceMappingURL=globals.css.map */

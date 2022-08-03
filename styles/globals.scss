@@ -6,7 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    
+  }
+  html{
+    scroll-behavior: smooth;
+    scroll-padding: 10vh;
   }
 
   span {

@@ -8,12 +8,13 @@ const Projects = () => {
     const [currentProject, setcurrentProject] = useState('Max-Cozis');
   
     return (
-        <div className={styles.section}>
+        <div className={styles.section} id="projects">
 
-            <h1 className={styles.projectTitle}>Projects</h1>
+            <h1 className={styles.projectTitle} id="carousel" >Projects</h1>
 
+            <div>
             <CarouselComponent currentProject={currentProject}/>
-
+            </div>
 
             <div className={styles.projectCard__wrapper}>
             {

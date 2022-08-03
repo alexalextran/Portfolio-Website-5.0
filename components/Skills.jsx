@@ -18,7 +18,7 @@ const Skills = () => {
       
 
     return (
-        <section className={styles.section} onMouseMove={moveBackground}>
+        <section className={styles.section} onMouseMove={moveBackground} id="skills">
             <h1>
                 Skills
             </h1>

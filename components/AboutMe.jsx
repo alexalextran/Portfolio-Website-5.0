@@ -5,7 +5,7 @@ import { FiMail } from 'react-icons/fi';
 
 const AboutMe = () => {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="aboutMe">
             <h1>About Me</h1>
             <p>Hey, thanks for taking out the time to check out my portfolio, I&apos;m  <span>Alex</span>, a student at <span>UTS</span> who loves desigining <span>web-applications</span> from the ground up.
             My first experience with programming was when I started my Bachelors of computing science at UTS in <span >2021</span>, which i have very much enjoyed, the apsect of problem solving and the creative freedom to make anything that programming offers is what makes programming such an enjoyable experience for me. 

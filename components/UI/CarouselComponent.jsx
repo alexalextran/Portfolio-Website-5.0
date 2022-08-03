@@ -24,17 +24,11 @@ const CarouselComponent = ({currentProject}) => {
 
 function Item({photo})
 {  
-   
     var bruh = Object.keys(photo)[0]
-
-
     return (
-       
         <div className={styles.carouselPhoto}>
             <Image src={photo[bruh].src} layout='fill' alt='carouselimage'></Image>
         </div>
-   
-  
     )
 }
 

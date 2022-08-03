@@ -14,22 +14,24 @@
 .title {
   z-index: 3;
   position: absolute;
-  background-color: rgb(28, 204, 91);
+  background-color: #1ccc5b;
   font-size: 2em;
   left: 50%;
   top: 5%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .section:after {
-  content: "";
+  content: '';
   height: 100%;
   width: 0.5em;
-  background-color: rgb(28, 204, 91);
+  background-color: #1ccc5b;
   position: absolute;
   bottom: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
 }
 
 .container {
@@ -37,21 +39,23 @@
   padding: 4em 9em 0em 9em;
   width: 50%;
 }
+
 .container::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 2em;
   height: 2em;
   right: -1.25em;
   background-color: white;
-  border: 0.3em solid rgb(28, 204, 91);
+  border: 0.3em solid #1ccc5b;
   top: 40%;
   border-radius: 50%;
   z-index: 1;
 }
+
 .container div {
   color: white;
-  background-color: rgb(30, 30, 30);
+  background-color: #1e1e1e;
   border-radius: 1em;
   padding: 1em 1em;
   text-align: center;
@@ -69,3 +73,4 @@
 .right::after {
   left: -1.25em;
 }
+/*# sourceMappingURL=Timeline.module.css.map */

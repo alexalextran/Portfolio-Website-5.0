@@ -6,7 +6,7 @@ import { Parallax } from 'react-scroll-parallax';
 const ProjectsCard = ({name, img, desc, setcurrentProject, linkGit, linkSite}) => {
 
     return ( 
-    <Parallax  /*opacity={[0.2, 2]}*/>
+    <Parallax style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} /*opacity={[0.2, 2]}*/>
         <div className={styles.card__wrapper}>
 
           
@@ -27,7 +27,7 @@ const ProjectsCard = ({name, img, desc, setcurrentProject, linkGit, linkSite}) =
             </div>
            
         </div>
-        <button onClick={() =>  setcurrentProject(name)}>Click me</button>
+        <a  href='#carousel' className={styles.button} onClick={() =>  setcurrentProject(name)}>Click me to change the carousel</a>
         </Parallax>
     );
 }

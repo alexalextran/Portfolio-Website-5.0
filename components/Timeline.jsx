@@ -4,7 +4,7 @@ import TimelineCard from './UI/TimelineCard';
 
 const Timeline = () => {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="timeline">
 
             <h1 className={styles.title}>My Journey So Far</h1>
 
