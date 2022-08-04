@@ -22,3 +22,9 @@
   color: rgb(28, 204, 91);
   margin: 0 1em;
 }
+
+@media all and (max-width: 550px) {
+  .section {
+    font-size: 1.9vw;
+  }
+}

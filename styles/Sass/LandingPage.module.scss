@@ -42,3 +42,18 @@
    
     }
 }
+
+
+@media all and (max-width: 550px) {
+  .section{
+    @include flexCenter(column);
+    font-size: 1.9vw;
+    .leftLP{
+        width: 100%;
+        padding-left: 0.3em;
+    }
+    .rightLP{
+        display: none;
+    }
+  }
+  }

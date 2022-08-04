@@ -100,3 +100,19 @@
         right: 0;
     }
 }
+
+@media all and (max-width: 550px) {
+    .section{
+      font-size: 1.9vw;
+      padding: 2em 4em;
+      h1{
+        font-size: 6em;
+      }
+      P{
+        font-size: 1.8em;
+      }
+      .aboutmeDI{
+        font-size: 1.4em;
+      }
+    }
+    }

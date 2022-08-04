@@ -19,3 +19,12 @@
         }
      }
 }
+
+
+@media all and (max-width: 550px) {
+    .section{
+      font-size: 1.9vw;
+      @include flexCustom(space-around, center, row);
+      padding: 2em 4em;
+    }
+    }

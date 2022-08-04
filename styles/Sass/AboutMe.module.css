@@ -104,3 +104,19 @@
 .section .button:hover > .buttonanimation {
   right: 0;
 }
+
+@media all and (max-width: 550px) {
+  .section {
+    font-size: 1.9vw;
+    padding: 2em 4em;
+  }
+  .section h1 {
+    font-size: 6em;
+  }
+  .section P {
+    font-size: 1.8em;
+  }
+  .section .aboutmeDI {
+    font-size: 1.4em;
+  }
+}

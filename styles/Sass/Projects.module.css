@@ -108,3 +108,19 @@
   height: -moz-fit-content;
   height: fit-content;
 }
+
+@media all and (max-width: 550px) {
+  .section {
+    font-size: 2vw;
+  }
+  .card__wrapper {
+    font-size: 1.3em;
+    margin: 1.6em 0;
+  }
+  .card__overlay {
+    font-size: 1em;
+  }
+  .button {
+    font-size: 2em;
+  }
+}
