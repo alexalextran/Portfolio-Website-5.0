@@ -20,7 +20,7 @@ const LandingPage = () => {
             <div className={styles.rightLP}>
             <Parallax opacity={[ 2.5, 0]}>
                 <div className={styles.image}>
-                   <Image src={profilepic} className={styles.image} /> 
+                   <Image src={profilepic} className={styles.image} alt="photo of me" /> 
                 </div>
                 </Parallax>
             </div>

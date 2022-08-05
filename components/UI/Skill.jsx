@@ -9,7 +9,7 @@ const Skill = ({name, img}) => {
         <div className={styles.skill__card}>
             <p>{name}</p>
             <div className={styles.skill__img}>
-           <Image src = {img.src}  height="100%" width="100%" /> 
+           <Image src = {img.src}  height="100%" width="100%" alt='skill png' /> 
            </div>
         </div>
     );
