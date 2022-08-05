@@ -123,7 +123,7 @@ const projects = [
     },
     {
         name: 'E-Commerce Store',
-        img: {MaxCozis},
+        img: {Ecommerce2},
         desc: 'A react mock e-commerce store that allows displays books fetched from a mock api and allows users to add books to a cart and dynamically updates the total and books displayed',
         stack: ['CSS', 'React'],
         linkGit: 'https://github.com/alexalextran/react-ecommerce-practice',
@@ -137,7 +137,7 @@ const projects = [
             issuesimg: {MaxCozis}
         },
         carouselPhotos: [
-            {Ecommerce}, {Ecommerce2}, {Ecommerce3}, {Ecommerce4}
+            {Ecommerce2}, {Ecommerce2}, {Ecommerce3}, {Ecommerce4}
         ]
     },
     {
