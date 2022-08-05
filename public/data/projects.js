@@ -16,7 +16,7 @@ import Academy6 from '../projects/Academy6.png'
 import Notflix from '../projects/Notflix.png'
 import Notflix2 from '../projects/Notflix2.png'
 import Notflix3 from '../projects/Notflix3.png'
-import Ecommerce from '../projects/Ecommerce.png'
+//import Ecommerce from '../projects/Ecommerce.png'
 import Ecommerce2 from '../projects/Ecommerce2.png'
 import Ecommerce3 from '../projects/Ecommerce3.png'
 import Ecommerce4 from '../projects/Ecommerce4.png'
@@ -123,14 +123,14 @@ const projects = [
     },
     {
         name: 'E-Commerce Store',
-        img: {Ecommerce},
+        img: {MaxCozis},
         desc: 'A react mock e-commerce store that allows displays books fetched from a mock api and allows users to add books to a cart and dynamically updates the total and books displayed',
         stack: ['CSS', 'React'],
         linkGit: 'https://github.com/alexalextran/react-ecommerce-practice',
         linkSite: 'https://alexalextran.github.io/react-ecommerce-practice/',
         projectdata: {
             purpose: 'E-commerce store was a web applcation that was developed inorder to get experience developing different types of use cases and in this case it was an online store, it fetches mock api data from a js file to generate fake products to which the user can add to cart',
-            purposeimg: {Ecommerce},
+            purposeimg: {MaxCozis},
             stack: 'React was chosen due its reusability for components and the ability to dynamically map data to components, allowing for a scalable store and a responsive UI',
             stackimg: {MaxCozis},
             issues:'One of the biggest in this project was just learning how to use react, since this project was my first ever react project, eveything still felt very alien to me so i was prone to mistakes, thankfully i was under the guidance of a mentor when completing this, so alot of my mistakes were explained and alot of key concepts that i did not understand, so in the end i understood alot of my mistakes and how to avoid them and in the end learnt that help is always a good idea especially for first time projects',
