@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from "../styles/Sass/Statistics.module.css"
-import CountUp, { useCountUp } from "react-countup";
+import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
 const Statistics = () => {
 
   const [apiData, setapiData] = useState(0)
@@ -37,13 +38,24 @@ const Statistics = () => {
         <section className={styles.section}>
             
             <div>
-            
-                <h1>{loaded ? <CountUp start={0} end={Math.floor(difference / (1000 * 3600 * 24))} enableScrollSpy/> : 0}</h1>
-                <h2>Days Programming</h2>
+            <CountUp end={Math.floor(difference / (1000 * 3600 * 24))} duration={3}>
+                {({ countUpRef, start }) => (
+            <VisibilitySensor onChange={start}>
+                <h1 ref={countUpRef}></h1>
+            </VisibilitySensor>
+            )}
+             </CountUp>
+             <h2>Days Programming</h2>
             </div>
 
             <div>
-                <h1>{loaded ? <CountUp start={0} end={apiData} enableScrollSpy/> : 0}</h1>
+            <CountUp end={apiData} duration={3}>
+                {({ countUpRef, start }) => (
+            <VisibilitySensor onChange={start}>
+                <h1 ref={countUpRef}></h1>
+            </VisibilitySensor>
+            )}
+             </CountUp>
                 <h2>Total Github Repositories</h2>
             </div>
             
