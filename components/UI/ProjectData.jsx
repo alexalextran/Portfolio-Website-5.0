@@ -15,9 +15,6 @@ const ProjectStack = ({title, text, img}) => {
                 <Image src={img[bruh].src} layout='fill' alt ='project photo'/>
             </div>
 
-           
-
-
         </div>
     );
 }
