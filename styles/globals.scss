@@ -20,5 +20,7 @@
   }
   
   a:active, a, a:focus{
+    cursor: pointer;
     color: black;
+    text-decoration: none;
   }

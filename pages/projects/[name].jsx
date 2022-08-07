@@ -1,8 +1,6 @@
 import React from 'react';
 import projects from  '../../public/data/projects.js'
-import Image from 'next/image'
 import ProjectData from '../../components/UI/ProjectData.jsx';
-
 import styles from "../../styles/Sass/ProjectsDynamic.module.css"
 import { BsGithub } from 'react-icons/bs';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
@@ -78,7 +76,7 @@ const Name = ({project}) => {
             <ProjectData title='Issues and Lessons Learnt' text={project.projectdata.issues} img={project.projectdata.issuesimg}/>
             </div>
           
-            <Link href={'/'}>Back Home</Link>
+            <a href={'/'}>Back Home</a>
            
         </div>
     );

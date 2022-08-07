@@ -2,33 +2,40 @@
 
 .section{
     @include fullScreen;
-    height: 5vh;
+    height: 10vh;
     position: fixed;
      font-size: 1vw;
      padding: 1em;
-     @include flexCenter(column);
+     @include flexCenter(row);
      z-index: 100;
      transition: background-color 700ms;
+     div{
+        cursor: pointer;
+     @include flexCenter(row);
+     
+     }
      ul{
         width: 100%;
         @include flexCustom(space-around, center, row);
        
         a{
+            color: transparent;
             transition: color 700ms;
         }
      }
     
 }
 
+.inverted{
+    filter: invert(1);
+ }
+
 .navColored{
     background-color: $darkgray;
     a{
-        color: $green;
+        color: $green !important;
     }
  }
  .transparent{
     background-color: transparent;
-    a{
-        color: transparent;
-    }
  }

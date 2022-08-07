@@ -19,6 +19,15 @@
         color: $green;
         margin: 0 1em;
     }
+    .img{
+        filter: invert(1);
+        height: 1.6em;
+        margin-bottom: 3em;
+        position: relative;
+        width: 1.7em;
+        transform: scale(5);
+        
+    }
 }
 
 @media all and (max-width: 550px) {
