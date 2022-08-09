@@ -73,13 +73,25 @@
 @media all and (max-width: 550px) {
   .section {
     font-size: 1.9vw;
+    overflow: hidden;
   }
   .section .container {
     padding: 2em 3em 0em 3em;
     font-size: 1.5em;
     z-index: 99;
+    width: 100%;
+  }
+  .section .container::after {
+    content: "";
+    position: absolute;
+    border: 0;
+    width: 0em;
+    height: 0em;
   }
   .section .container div {
-    padding: 0.4em;
+    padding: 1em;
+  }
+  .section .right {
+    left: 0%;
   }
 }

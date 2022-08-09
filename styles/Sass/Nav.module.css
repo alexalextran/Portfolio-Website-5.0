@@ -30,6 +30,11 @@
   color: transparent;
   transition: color 700ms;
 }
+.section .img {
+  width: 10em;
+  height: 10em;
+  position: relative;
+}
 
 .inverted {
   filter: invert(1);
@@ -44,4 +49,14 @@
 
 .transparent {
   background-color: transparent;
+}
+
+@media all and (max-width: 550px) {
+  .section {
+    font-size: 2vw;
+  }
+  .section .img {
+    width: 11em;
+    height: 11em;
+  }
 }

@@ -40,7 +40,7 @@ const Nav = () => {
     
     return (
         <section className={styles.section} id="nav">
-            <div id='img'>
+            <div id='img' className={styles.img}>
             <Link href={'/'}>
                 <Image src={logo} />
             </Link>
