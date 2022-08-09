@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Alex Tran</title>
         <meta name="description" content="Alex Tran's personal portfolio" />
-        <link rel="icon" href="/profilepic.png" />
+        <link rel="icon" href="/punpun-transparent.png" />
       </Head>
 
       <main>
