@@ -59,4 +59,11 @@
     width: 11em;
     height: 11em;
   }
+  .section ul {
+    width: 70%;
+  }
+  .section a {
+    font-size: 1.5em;
+    margin: 0 0.4em;
+  }
 }
