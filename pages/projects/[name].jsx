@@ -32,7 +32,6 @@ let filteredProjects = projects.filter(function (project) {
 return{
     props: { project: filteredProjects[0]}
 };
-
 }
 
 const Name = ({project}) => {

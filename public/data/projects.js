@@ -28,6 +28,12 @@ import JSPIssues from '../projects/JSPIssues.png'
 import JSP from '../projects/JSP.png'
 import JSP2 from '../projects/JSP2.png'
 import JSP3 from '../projects/JSP3.png'
+import EPortfolioIssue from '../projects/EPortfolioIssue.png'
+import EPortfolio from '../projects/EPortfolio.png'
+import EPortfolio2 from '../projects/EPortfolio2.png'
+import EPortfolio3 from '../projects/EPortfolio3.png'
+import EPortfolio4 from '../projects/EPortfolio4.png'
+import EPortfolio5 from '../projects/EPortfolio5.png'
 
 const projects = [
     {
@@ -162,6 +168,25 @@ const projects = [
         },
         carouselPhotos: [
              {JSP}, {JSP2}, {JSP3}
+        ]
+    },
+    {
+        name: 'E-Portfolio',
+        img: {EPortfolio},
+        desc: 'A personal e-portfolio developed as a way to showcase projects and skills and allow for communcation and interaction',
+        stack: ['SASS', 'Javascript', 'React', 'NextJs'],
+        linkGit: 'https://alextranportfolio.com/',
+        linkSite: 'https://github.com/alexalextran/Portfolio-Website-5.0',
+        projectdata: {
+            purpose: 'While previous renditions of my e-portfolio exist, V4 did not do a very good job of showcasing each project with an indepth explanation and was very brief, which is why V5 was designed to allow for the option between a brief summary and an in depth explanation of the entire coding process',
+            purposeimg: {EPortfolio},
+            stack: 'React was chosen for its ease of use and its reusability and scalability when it comes to component, while nextjs was chosen as a way to generate dynamaic scalable pages that are generated from json data to showcase projects on a seprate page',
+            stackimg: {EPortfolioIssue},
+            issues:'The hardest aspect of this project was actually coding, it was the planning side, while i could of just redesigned my old project with react again, i decided to use a different approach to make this project way more scalable and easier to manage, so i had to decide what language/technology to add to my stack. So thus i had to watch several video and go through different articles to form my own judgement on which technology would suit my goals and purpose most which is where nextJS comes in.',
+            issuesimg: {EPortfolio}
+        },
+        carouselPhotos: [
+            {EPortfolio}, {EPortfolio2}, {EPortfolio3}, {EPortfolio4}, {EPortfolio5}
         ]
     },
    
