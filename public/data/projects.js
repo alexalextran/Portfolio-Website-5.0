@@ -1,12 +1,15 @@
 import MaxCozis from '../projects/MaxCozis.png'
 import MaxCozis2 from '../projects/MaxCozis2.png'
 import MaxCozis3 from '../projects/MaxCozis3.png'
+import MaxCozis4 from '../projects/MaxCozis4.png'
+import MaxCozis5 from '../projects/MaxCozis5.png'
 import MaxCozisIssue from '../projects/MaxCozisIssue.png'
 import MemoryGame from '../projects/MemoryGame.png'
 import MemoryGame2 from '../projects/MemoryGame2.png'
 import MemoryGame3 from '../projects/MemoryGame3.png'
 import MemoryGameIssues from '../projects/MemoryGameIssues.png'
 import Memories from '../projects/Memories.png'
+import MemoriesIssues from '../projects/MemoriesIssue.png'
 import Academy from '../projects/Academy.png'
 import Academy2 from '../projects/Academy2.png'
 import Academy3 from '../projects/Academy3.png'
@@ -16,10 +19,12 @@ import Academy6 from '../projects/Academy6.png'
 import Notflix from '../projects/Notflix.png'
 import Notflix2 from '../projects/Notflix2.png'
 import Notflix3 from '../projects/Notflix3.png'
-//import Ecommerce from '../projects/Ecommerce.png'
+import NotflixIssue from '../projects/NotflixIssue.png'
+import Ecommerce from '../projects/Ecommerce.png'
 import Ecommerce2 from '../projects/Ecommerce2.png'
 import Ecommerce3 from '../projects/Ecommerce3.png'
 import Ecommerce4 from '../projects/Ecommerce4.png'
+import JSPIssues from '../projects/JSPIssues.png'
 import JSP from '../projects/JSP.png'
 import JSP2 from '../projects/JSP2.png'
 import JSP3 from '../projects/JSP3.png'
@@ -41,7 +46,7 @@ const projects = [
             issuesimg: {MaxCozisIssue}
         },
         carouselPhotos: [
-             {MaxCozis}, {MaxCozis2}, {MaxCozis3}
+             {MaxCozis}, {MaxCozis2}, {MaxCozis3}, {MaxCozis4}, {MaxCozis5}
         ]
         
     },
@@ -75,9 +80,9 @@ const projects = [
             purpose: 'Memories was my first ever MERN project that i developed under the guidance of a mentor, it was developed as a mock social media application that allows users to share images, it was one of the most important projects as it gave me a first hand experience on developing full stack applications from scratch',
             purposeimg: {Memories},
             stack: 'The application was built using nodeJs and expressjs to create a live server which could fetch data from a database i.e mongoDB, mongoDB was chosen since it was a non relational DB that was very easy to use, and react was chosen to allow for fast UI changes',
-            stackimg: {MaxCozis},
-            issues:'One of the biggest issues from this project was just manageing all the files and folders epspecially for a fullstack application , so inorder to solve this, i seperated all the frontend and backend files into their own folders and then for the backend side of things i followed the MVC blueprint placing all my backend functions into the a controller folder and my schema into a model folder.',
-            issuesimg: {MaxCozis}
+            stackimg: {Memories},
+            issues:'One of the biggest issues from this project was learning how to transition backend development from a development server to a live server, which meant ensuring that everything behaved the same way as it did on a live server, in this case the port i used for development was 5000 but on netlify it would be dynamic so i had to account for this, to solve this i read up on netlify documentation to try and get an idea on how to adjust the codebase for live production which is where i figured out how to use process.env to my advantage. Another issue was just managing all the files since for a big project like this, there were dozens of files, so to get around this i incporated the MVC structure to keep things neat and tidy',
+            issuesimg: {MemoriesIssues}
         },
         carouselPhotos: [
              {Memories}
@@ -94,9 +99,9 @@ const projects = [
             purpose: 'A- Academy was a developed as a commission for a friend to advertise his online teaching platform, it was intended to allow users to check out his videos with a built in video player and also a built in email system that allows end users to securely send him emails.',
             purposeimg: {Academy},
             stack: 'There was originally a older release of A- Academy however the old site was static and was poorly designed so react was chosen as an upgrade to provide a dynamic and interactive UI to help provide a better User Experience',
-            stackimg: {MaxCozis},
+            stackimg: {Academy5},
             issues:'One of the biggest issues with the project was coodinating with the client, since the client did not have a specific design so i asked the client what sort of style he wanted and so he wanted somethign that would articulate his reach and reputation, thus i developed the site with this goal in mind, i developed features such as a subscriber/view counter and also testimonials.',
-            issuesimg: {MaxCozis}
+            issuesimg: {Academy3}
         },
         carouselPhotos: [
              {Academy}, {Academy2}, {Academy3}, {Academy4}, {Academy5}, {Academy6}
@@ -114,8 +119,8 @@ const projects = [
             purposeimg: {Notflix2},
             stack: 'Since Notflix was chosen to include simple login systems, firebase was chosen as it was very easy to implement a simple login system, as well as this react was chosen to allow for scalability and reusability since netflix has alot of dynamic components that are very similar i.e the home page cards',
             stackimg: {Notflix},
-            issues:'One of the biggest issues was dealing with api keys, since the api i used required a key, this meant that hardcoding the key into my code would make the key extremely vunerable so inorder to combat this, i searched around online and discovered that react supported env varibles so after reading up on react documentation i was able to create a process.evn file and secured the api key that way.',
-            issuesimg: {MaxCozis}
+            issues:'One of the biggest issues was dealing with api keys, since the api i used required a key, this meant that hardcoding the key into my code would make the key extremely vunerable so inorder to combat this, i searched around online and discovered that react supported env varibles so after reading up on react documentation i was able to create a process.env file and secured the api key that way.',
+            issuesimg: {NotflixIssue}
         },
         carouselPhotos: [
              {Notflix}, {Notflix2}, {Notflix3}
@@ -123,21 +128,21 @@ const projects = [
     },
     {
         name: 'E-Commerce Store',
-        img: {Ecommerce2},
+        img: {Ecommerce},
         desc: 'A react mock e-commerce store that allows displays books fetched from a mock api and allows users to add books to a cart and dynamically updates the total and books displayed',
         stack: ['CSS', 'React'],
         linkGit: 'https://github.com/alexalextran/react-ecommerce-practice',
         linkSite: 'https://alexalextran.github.io/react-ecommerce-practice/',
         projectdata: {
             purpose: 'E-commerce store was a web applcation that was developed inorder to get experience developing different types of use cases and in this case it was an online store, it fetches mock api data from a js file to generate fake products to which the user can add to cart',
-            purposeimg: {MaxCozis},
+            purposeimg: {Ecommerce2},
             stack: 'React was chosen due its reusability for components and the ability to dynamically map data to components, allowing for a scalable store and a responsive UI',
-            stackimg: {MaxCozis},
+            stackimg: {Ecommerce3},
             issues:'One of the biggest in this project was just learning how to use react, since this project was my first ever react project, eveything still felt very alien to me so i was prone to mistakes, thankfully i was under the guidance of a mentor when completing this, so alot of my mistakes were explained and alot of key concepts that i did not understand, so in the end i understood alot of my mistakes and how to avoid them and in the end learnt that help is always a good idea especially for first time projects',
-            issuesimg: {MaxCozis}
+            issuesimg: {Ecommerce4}
         },
         carouselPhotos: [
-            {Ecommerce2}, {Ecommerce2}, {Ecommerce3}, {Ecommerce4}
+           {Ecommerce}, {Ecommerce2}, {Ecommerce3}, {Ecommerce4}
         ]
     },
     {
@@ -151,9 +156,9 @@ const projects = [
             purpose: 'This project was a assignment desiginated for my software development subject for the sole purpose of designing a mock ecommerce application within a group',
             purposeimg: {JSP},
             stack: 'Java was chosen due to its OOP principles which allow for ease of use when converting business logic to code, and SQL was chosen since it was integrated to the Netbeans ide that was suggested at the time and also allowed us to contain data on a local server, while html and css were used to build the frontend',
-            stackimg: {MaxCozis},
+            stackimg: {JSP2},
             issues:'The hardest aspect of this project was incooprating everything, from using slack, github, netbeans to jsp was all very foreign and while using one individually was not difficult incooporating it all required lots of teamwork and communication to ensure everyone was on the same page, in the end it the project did teach us alot on how to coodinate on desigining applications.',
-            issuesimg: {MaxCozis}
+            issuesimg: {JSPIssues}
         },
         carouselPhotos: [
              {JSP}, {JSP2}, {JSP3}
