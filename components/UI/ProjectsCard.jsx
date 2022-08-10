@@ -27,7 +27,7 @@ const ProjectsCard = ({name, img, desc, setcurrentProject, linkGit, linkSite}) =
             </div>
            
         </div>
-        <a  href='#carousel' className={styles.button} onClick={() =>  setcurrentProject(name)}>Click me to change the carousel</a>
+        <a  href='#carousel' className={styles.button} onClick={() =>  setcurrentProject(name)} /*Changes current projectstate to whatever is clicked */>Click me to change the carousel</a>
         </Parallax>
     );
 }

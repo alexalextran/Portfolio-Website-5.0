@@ -42,8 +42,6 @@ const AboutMe = () => {
 
                 </div>
                 </div>
-
-             
             </div>
             <button className={styles.button}><div className={styles.buttonanimation}></div>Download my cv</button>
         </section>

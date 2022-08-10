@@ -19,10 +19,7 @@ const Projects = () => {
             <div className={styles.projectCard__wrapper}>
             {
                 projects.map((project) => {
-                
                     var bruh = Object.keys(project.img)[0]
-                    console.log(project)
-                    
                 return(<ProjectsCard setcurrentProject={setcurrentProject} key={project.name} name={project.name} img={project.img[bruh]} desc={project.desc} linkGit={project.linkGit} linkSite={project.linkSite}/>)
                 })
             }

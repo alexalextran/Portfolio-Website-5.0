@@ -16,6 +16,7 @@ const CarouselComponent = ({currentProject}) => {
     return (
         <Carousel navButtonsAlwaysVisible className={styles.carousel}>
         {
+            //generates an carousel item for each photo that exists within the array
             array[0].carouselPhotos.map( (item, index) => <Item key={index} photo={item} /> )
         }
     </Carousel>

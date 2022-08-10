@@ -2,8 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 import styles from "../../styles/Sass/ProjectsDynamic.module.css"
 const ProjectStack = ({title, text, img}) => {
-    var bruh = Object.keys(img)[0]
-  console.log(img[bruh].src)
+    var bruh = Object.keys(img)[0] //returns the first key within the object
     return (
         <div className={styles.dynamicdata__div}>
             <div>

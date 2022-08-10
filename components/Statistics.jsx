@@ -17,7 +17,7 @@ const Statistics = () => {
       setloaded(true)
     }
     userAction()
-
+    //fetch repo data from github api and disables loading stage
     
   }, [])
 

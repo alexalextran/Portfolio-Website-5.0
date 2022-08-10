@@ -4,11 +4,13 @@ import { Parallax } from 'react-scroll-parallax';
 
 const TimelineCard = ({direction, title, date, text, parllaxValues}) => {
 
+    //dictates parralax value based on the prop that was passed
+
     return (
      
         
         <div className={styles.container + " " + direction}>
-        <Parallax  translateX={[parllaxValues, `${(parseInt(parllaxValues)*-1).toString()}%`]} speed={10}>
+        <Parallax  translateX={[parllaxValues, `${(parseInt(parllaxValues)*-1).toString()}%`]} speed={10}>   
         <div>
         <h2>{title}</h2>
         <h4>{date}</h4>

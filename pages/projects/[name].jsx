@@ -8,23 +8,21 @@ import Link from 'next/link.js';
 
 
 export const getStaticPaths = () => {
-
+//generates all possible routes and links for every project
     const paths = projects.map(project => {
         return{
             params: {name: project.name.toString()}
         }
     })
-
     return{
         paths,
         fallback: false
     }
-
 }
 
 export const getStaticProps = async (context) => {
+    //filters out the projects from the object by using the context params
 const name = context.params.name
-
 let filteredProjects = projects.filter(function (project) {
     return project.name === name;
 });
@@ -35,7 +33,6 @@ return{
 }
 
 const Name = ({project}) => {
- console.log(project.stack)
     return (
         <div className={styles.section}>
             <h1>{project.name}</h1>
@@ -69,9 +66,7 @@ const Name = ({project}) => {
             
             <div className={styles.dynamicdata__wrapper}>
             <ProjectData title='Purpose and Direction' text={project.projectdata.purpose} img={project.projectdata.purposeimg}/>
-          
             <ProjectData title='Stack Explanation' text={project.projectdata.stack} img={project.projectdata.stackimg}/>
-     
             <ProjectData title='Issues and Lessons Learnt' text={project.projectdata.issues} img={project.projectdata.issuesimg}/>
             </div>
           

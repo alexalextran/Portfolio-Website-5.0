@@ -8,6 +8,7 @@ const Nav = () => {
     
   
     if (typeof window !== "undefined") {
+        //if statement only executes once everything has rendered (nextjs thing)
         var nav = document.getElementById("nav")
         var img = document.getElementById("img")
         var about = document.getElementById("aboutMe")
@@ -15,6 +16,7 @@ const Nav = () => {
         document.addEventListener("scroll",  ()=> {  
             
             if (document.body.scrollTop >= (about.getBoundingClientRect().top)){
+                //only executes once the user has scrolled up to the aboutme component
                 nav.classList.add(styles.navColored);
                 nav.classList.remove(styles.transparent);
                 img.classList.add(styles.inverted)
@@ -24,10 +26,7 @@ const Nav = () => {
                 nav.classList.remove(styles.navColored);
                 img.classList.remove(styles.inverted)
              }
-
         });  
-
-   
     };
 
       
