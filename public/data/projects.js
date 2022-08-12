@@ -39,16 +39,16 @@ const projects = [
     {
         name: 'Max-Cozis',
         img: {MaxCozis},
-        desc: 'A template website built using firebase and react, comissioned for a friend intended to articulate his artistic talents. The site features a dynamic image carousel that fetches all the images from a secure firebase cloud database and also includes a secure dashboard system that allows the user to securely manage all the works through full CRUD functionaility',
+        desc: 'A template website built using firebase and react, commissioned for a friend intended to articulate his artistic talents. The site features a dynamic image carousel that fetches all the images from a secure firebase cloud database and also includes a secure dashboard system that allows the user to securely manage all the works through full CRUD functionality',
         stack: ['Sass','JavaScript','React', 'Firebase'],
         linkGit: 'https://github.com/alexalextran/max-cozis',
         linkSite: 'https://alexalextran.github.io/max-cozis/',
         projectdata: {
             purpose: 'Max-Cozis is a project i developed for the sole purpose of developing a secure application that would allow the user to both showcase his skills and be able to self manage all his works in a simple and intuitive system',
             purposeimg: {MaxCozis2},
-            stack: 'Since the website is intended to provide a good user experience, react was chosen to build fast and clean UIs as well as this, the application also needed to allow for self sufficient changes while being easy to use for people from a non technical background, which is why firebase was chosen, to allow for real time feedback when updating the works, combined with react this allowed for a simplified system that allowed the user to self manage his own works. As well as this libaries responsible for photo carousels were used to showcase the users artistic works.',
+            stack: 'Since the website is intended to provide a good user experience, react was chosen to build fast and clean UIs as well as this, the application also needed to allow for self sufficient changes while being easy to use for people from a non technical background, which is why firebase was chosen, to allow for real time feedback when updating the works, combined with react this allowed for a simplified system that allowed the user to self manage his own works. As well as this libraries responsible for photo carousels were used to showcase the users artistic works.',
             stackimg: {MaxCozis3},
-            issues:'One of the biggest issues, is that while there was a login feature, any end user could acess the dashboard through changing the url, which meant it was not fully secure, this is where private routes were implemented, in which if a current user does nto exist, i.e end user has not logged in, then they will be redirected to the login page, this meant that the dashboard that allows the editing of the works was fully secure and could only be acess through a login system that was manage by firebase. As well as this, creating a carousel that accounted for different image sizes and aspect ratios was quite difficult to do in vanilla js/react, hence carousel libaries were implemented to allow for different image sizes',
+            issues:'One of the biggest issues, is that while there was a login feature, any end user could access the dashboard through changing the url, which meant it was not fully secure, this is where private routes were implemented, in which if a current user does nto exist, i.e end user has not logged in, then they will be redirected to the login page, this meant that the dashboard that allows the editing of the works was fully secure and could only be access through a login system that was manage by firebase. As well as this, creating a carousel that accounted for different image sizes and aspect ratios was quite difficult to do in vanilla js/react, hence carousel libraries were implemented to allow for different image sizes',
             issuesimg: {MaxCozisIssue}
         },
         carouselPhotos: [
@@ -59,16 +59,16 @@ const projects = [
     {
         name: 'Memory Game V2',
         img: {MemoryGame},
-        desc: 'The second iteration of memory game two built from the ground up using react and firebase, features a secure google authetication system that is managed by firebase that allows users to login and submit their highscores to a real time leaderboard that ranks players based on score and time respectively, the game also includes a dynamic gridsize that lets players choose their grid size.',
+        desc: 'The second iteration of memory game two built from the ground up using react and firebase, features a secure google authentication system that is managed by firebase that allows users to login and submit their highscores to a real time leaderboard that ranks players based on score and time respectively, the game also includes a dynamic gridsize that lets players choose their grid size.',
         stack: ['Sass','JavaScript','React', 'Firebase'],
         linkGit: 'https://github.com/alexalextran/memory-game-v2',
         linkSite: 'https://alexalextran.github.io/memory-game-v2/',
         projectdata: {
             purpose: 'Memory Game V2 was actually a passion project that was based off the first rendition, Memory Game was built as an interactive game for all my friends to enjoy and also since building regular websites was getting pretty tiresome, hence designing MG2 was vastly different from most of my projects since it was an all original design. It features a competitive leaderboard that compares against time and level and also a customizable grid/playing field that is dynamic',
             purposeimg: {MemoryGame},
-            stack: 'The first Memory game was built using javascript which worked but has alot of issues including perfomance, since the game was constantly making changes to the DOM it made the game lag several times while playing, hence react was chosen since it allows for quick and non intensive changes to the UI using the virtual DOM. As well as this a promised leaderboard was planned to be a big feature of the game, hence a lightweight database was needed as well as user authentication, thus firebase was chosen for its easy authentication system and non relational DB that was fast and effecient',
+            stack: 'The first Memory game was built using javascript which worked but has a lot of issues including performance, since the game was constantly making changes to the DOM it made the game lag several times while playing, hence react was chosen since it allows for quick and non intensive changes to the UI using the virtual DOM. As well as this a promised leaderboard was planned to be a big feature of the game, hence a lightweight database was needed as well as user authentication, thus firebase was chosen for its easy authentication system and non relational DB that was fast and efficient',
             stackimg: {MemoryGame2},
-            issues:'One of the biggest issues with this project was working with state and rendering, especially when there a multiple istances of state that you have to account for, since at the time i had not learnt redux yet, dealing with multiple instances of state did get overwhelming at times so to get around this i created a complete diagram of all my child components and state using my whiteboard and so planning it that way allowed me to see which states affected which components. but ultimitely the project deepened my understanding of react by a good amount, teaching me about how to manipulate the life cycle if components to change state. Overall it was a challenging but rewarding project and any future renditions will most likely have redux incooporated',
+            issues:'One of the biggest issues with this project was working with state and rendering, especially when there a multiple instances of state that you have to account for, since at the time i had not learnt redux yet, dealing with multiple instances of state did get overwhelming at times so to get around this i created a complete diagram of all my child components and state using my whiteboard and so planning it that way allowed me to see which states affected which components. but ultimately the project deepened my understanding of react by a good amount, teaching me about how to manipulate the life cycle if components to change state. Overall it was a challenging but rewarding project and any future renditions will most likely have redux incorporated',
             issuesimg: {MemoryGameIssues}
         },
         carouselPhotos: [
@@ -78,7 +78,7 @@ const projects = [
     {
         name: 'Memories',
         img: {Memories},
-        desc: 'A full stack web application intended to mock a social media site, allows users to share pictures and provide captions and tags live. It features a reponsive ui designed using react and a backend server developed using nodejs and express to host and connect to a cloud database managed by mongoDB',
+        desc: 'A full stack web application intended to mock a social media site, allows users to share pictures and provide captions and tags live. It features a responsive ui designed using react and a backend server developed using nodejs and express to host and connect to a cloud database managed by mongoDB',
         stack: ['TailWind','JavaScript','React', 'MongoDB', 'NodeJs', 'ExpressJs'],
         linkGit: 'https://github.com/alexalextran/Memories_MERN',
         linkSite: 'https://alexalextran.github.io/Memories_MERN/',
@@ -87,7 +87,7 @@ const projects = [
             purposeimg: {Memories},
             stack: 'The application was built using nodeJs and expressjs to create a live server which could fetch data from a database i.e mongoDB, mongoDB was chosen since it was a non relational DB that was very easy to use, and react was chosen to allow for fast UI changes',
             stackimg: {Memories},
-            issues:'One of the biggest issues from this project was learning how to transition backend development from a development server to a live server, which meant ensuring that everything behaved the same way as it did on a live server, in this case the port i used for development was 5000 but on netlify it would be dynamic so i had to account for this, to solve this i read up on netlify documentation to try and get an idea on how to adjust the codebase for live production which is where i figured out how to use process.env to my advantage. Another issue was just managing all the files since for a big project like this, there were dozens of files, so to get around this i incporated the MVC structure to keep things neat and tidy',
+            issues:'One of the biggest issues from this project was learning how to transition backend development from a development server to a live server, which meant ensuring that everything behaved the same way as it did on a live server, in this case the port i used for development was 5000 but on netlify it would be dynamic so i had to account for this, to solve this i read up on netlify documentation to try and get an idea on how to adjust the codebase for live production which is where i figured out how to use process.env to my advantage. Another issue was just managing all the files since for a big project like this, there were dozens of files, so to get around this i incorporated the MVC structure to keep things neat and tidy',
             issuesimg: {MemoriesIssues}
         },
         carouselPhotos: [
@@ -97,7 +97,7 @@ const projects = [
     {
         name: 'A- Academy',
         img: {Academy},
-        desc: 'An offical website commisioned to display and advertise the customers online education courses. The site was developed using react and features a video carousel and live data fetching using youtube api to display a subscriber, view count and also fetch videos and allow them to be viewed in a built in video player',
+        desc: 'An official website commissioned to display and advertise the customers online education courses. The site was developed using react and features a video carousel and live data fetching using youtube api to display a subscriber, view count and also fetch videos and allow them to be viewed in a built in video player',
         stack: ['CSS', 'JavaScript', 'React'],
         linkGit: 'https://github.com/alexalextran/react-adash',
         linkSite: 'http://aadarshanujacademy.com/',
@@ -106,7 +106,7 @@ const projects = [
             purposeimg: {Academy},
             stack: 'There was originally a older release of A- Academy however the old site was static and was poorly designed so react was chosen as an upgrade to provide a dynamic and interactive UI to help provide a better User Experience',
             stackimg: {Academy5},
-            issues:'One of the biggest issues with the project was coodinating with the client, since the client did not have a specific design so i asked the client what sort of style he wanted and so he wanted somethign that would articulate his reach and reputation, thus i developed the site with this goal in mind, i developed features such as a subscriber/view counter and also testimonials.',
+            issues:'One of the biggest issues with the project was coordinating with the client, since the client did not have a specific design so i asked the client what sort of style he wanted and so he wanted something that would articulate his reach and reputation, thus i developed the site with this goal in mind, i developed features such as a subscriber/view counter and also testimonials.',
             issuesimg: {Academy3}
         },
         carouselPhotos: [
@@ -123,9 +123,9 @@ const projects = [
         projectdata: {
             purpose: 'Notflix was intended as a personal challenge to attempt and emulate advanced UI, thus netflix was chosen, the project consists of a simple login and registration system and aims to emulate the process of navigating the home page of the netflix website',
             purposeimg: {Notflix2},
-            stack: 'Since Notflix was chosen to include simple login systems, firebase was chosen as it was very easy to implement a simple login system, as well as this react was chosen to allow for scalability and reusability since netflix has alot of dynamic components that are very similar i.e the home page cards',
+            stack: 'Since Notflix was chosen to include simple login systems, firebase was chosen as it was very easy to implement a simple login system, as well as this react was chosen to allow for scalability and reusability since netflix has a lot of dynamic components that are very similar i.e the home page cards',
             stackimg: {Notflix},
-            issues:'One of the biggest issues was dealing with api keys, since the api i used required a key, this meant that hardcoding the key into my code would make the key extremely vunerable so inorder to combat this, i searched around online and discovered that react supported env varibles so after reading up on react documentation i was able to create a process.env file and secured the api key that way.',
+            issues:'One of the biggest issues was dealing with api keys, since the api i used required a key, this meant that hardcoding the key into my code would make the key extremely vulnerable so in order to combat this, i searched around online and discovered that react supported env variables so after reading up on react documentation i was able to create a process.env file and secured the api key that way.',
             issuesimg: {NotflixIssue}
         },
         carouselPhotos: [
@@ -140,11 +140,11 @@ const projects = [
         linkGit: 'https://github.com/alexalextran/react-ecommerce-practice',
         linkSite: 'https://alexalextran.github.io/react-ecommerce-practice/',
         projectdata: {
-            purpose: 'E-commerce store was a web applcation that was developed inorder to get experience developing different types of use cases and in this case it was an online store, it fetches mock api data from a js file to generate fake products to which the user can add to cart',
+            purpose: 'E-commerce store was a web application that was developed in order to get experience developing different types of use cases and in this case it was an online store, it fetches mock api data from a js file to generate fake products to which the user can add to cart',
             purposeimg: {Ecommerce2},
             stack: 'React was chosen due its reusability for components and the ability to dynamically map data to components, allowing for a scalable store and a responsive UI',
             stackimg: {Ecommerce3},
-            issues:'One of the biggest in this project was just learning how to use react, since this project was my first ever react project, eveything still felt very alien to me so i was prone to mistakes, thankfully i was under the guidance of a mentor when completing this, so alot of my mistakes were explained and alot of key concepts that i did not understand, so in the end i understood alot of my mistakes and how to avoid them and in the end learnt that help is always a good idea especially for first time projects',
+            issues:'One of the biggest in this project was just learning how to use react, since this project was my first ever react project, everything still felt very alien to me so i was prone to mistakes, thankfully i was under the guidance of a mentor when completing this, so a lot of my mistakes were explained and a lot of key concepts that i did not understand, so in the end i understood a lot of my mistakes and how to avoid them and in the end learnt that help is always a good idea especially for first time projects',
             issuesimg: {Ecommerce4}
         },
         carouselPhotos: [
@@ -154,16 +154,16 @@ const projects = [
     {
         name: 'Java JSP Mock Store',
         img: {JSP},
-        desc: 'A full stack application developed within a team, aimed at emulating an server side e-commerce system that allows users to login, manage their accounts and place orders, it also features a staff management system that alows for full CRUD features. All the data is fully hosted on a local sql database',
+        desc: 'A full stack application developed within a team, aimed at emulating an server side e-commerce system that allows users to login, manage their accounts and place orders, it also features a staff management system that allows for full CRUD features. All the data is fully hosted on a local sql database',
         stack: ['HTML', 'CSS', 'Java', 'SQL'],
         linkGit: 'https://github.com/alexalextran/Iotbay',
         linkSite: 'https://github.com/alexalextran/Iotbay',
         projectdata: {
-            purpose: 'This project was a assignment desiginated for my software development subject for the sole purpose of designing a mock ecommerce application within a group',
+            purpose: 'This project was a assignment designated for my software development subject for the sole purpose of designing a mock ecommerce application within a group',
             purposeimg: {JSP},
             stack: 'Java was chosen due to its OOP principles which allow for ease of use when converting business logic to code, and SQL was chosen since it was integrated to the Netbeans ide that was suggested at the time and also allowed us to contain data on a local server, while html and css were used to build the frontend',
             stackimg: {JSP2},
-            issues:'The hardest aspect of this project was incooprating everything, from using slack, github, netbeans to jsp was all very foreign and while using one individually was not difficult incooporating it all required lots of teamwork and communication to ensure everyone was on the same page, in the end it the project did teach us alot on how to coodinate on desigining applications.',
+            issues:'The hardest aspect of this project was incorporating everything, from using slack, github, netbeans to jsp was all very foreign and while using one individually was not difficult incorporating it all required lots of teamwork and communication to ensure everyone was on the same page, in the end it the project did teach us a lot on how to coordinate on designing applications.',
             issuesimg: {JSPIssues}
         },
         carouselPhotos: [
@@ -173,14 +173,14 @@ const projects = [
     {
         name: 'E-Portfolio',
         img: {EPortfolio},
-        desc: 'A personal e-portfolio developed as a way to showcase projects and skills and allow for communcation and interaction',
+        desc: 'A personal e-portfolio developed as a way to showcase projects and skills and allow for communication and interaction',
         stack: ['SASS', 'Javascript', 'React', 'NextJs'],
         linkGit: 'https://alextranportfolio.com/',
         linkSite: 'https://github.com/alexalextran/Portfolio-Website-5.0',
         projectdata: {
-            purpose: 'While previous renditions of my e-portfolio exist, V4 did not do a very good job of showcasing each project with an indepth explanation and was very brief, which is why V5 was designed to allow for the option between a brief summary and an in depth explanation of the entire coding process',
+            purpose: 'While previous renditions of my e-portfolio exist, V4 did not do a very good job of showcasing each project with an in-depth explanation and was very brief, which is why V5 was designed to allow for the option between a brief summary and an in depth explanation of the entire coding process',
             purposeimg: {EPortfolio},
-            stack: 'React was chosen for its ease of use and its reusability and scalability when it comes to component, while nextjs was chosen as a way to generate dynamaic scalable pages that are generated from json data to showcase projects on a seprate page',
+            stack: 'React was chosen for its ease of use and its reusability and scalability when it comes to component, while nextjs was chosen as a way to generate dynamic scalable pages that are generated from json data to showcase projects on a separate page',
             stackimg: {EPortfolioIssue},
             issues:'The hardest aspect of this project was actually coding, it was the planning side, while i could of just redesigned my old project with react again, i decided to use a different approach to make this project way more scalable and easier to manage, so i had to decide what language/technology to add to my stack. So thus i had to watch several video and go through different articles to form my own judgement on which technology would suit my goals and purpose most which is where nextJS comes in.',
             issuesimg: {EPortfolio}

@@ -88,6 +88,7 @@
   z-index: 1;
   background-color: transparent;
   cursor: pointer;
+  border: 0.15em solid black;
 }
 .section .buttonanimation {
   background-color: rgb(28, 204, 91);
