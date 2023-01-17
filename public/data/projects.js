@@ -34,6 +34,9 @@ import EPortfolio2 from '../projects/EPortfolio2.png'
 import EPortfolio3 from '../projects/EPortfolio3.png'
 import EPortfolio4 from '../projects/EPortfolio4.png'
 import EPortfolio5 from '../projects/EPortfolio5.png'
+import WAMARK1 from '../projects/WAMARK1.png'
+import WAMARK2 from '../projects/WAMARK2.png'
+import WAMARK3 from '../projects/WAMARK3.png'
 
 const projects = [
     {
@@ -152,6 +155,25 @@ const projects = [
         ]
     },
     {
+        name: 'Wam-Mark-Calulator',
+        img: {WAMARK1},
+        desc: 'A dynamic online calulator that calulates a users marks and wam imapct for each semester and subject',
+        stack: ['SASS', 'Javascript', 'React', 'NextJs', 'Firebase'],
+        linkGit: 'https://github.com/alexalextran/uni-mark-wam-calculator',
+        linkSite: 'https://uni-mark-wam-calculator-fr0nc1i4l-alexalextran.vercel.app/',
+        projectdata: {
+            purpose: 'WAMARK was a project created to solve an issue and also help strengthen my understanding of database coding. The issue in question was that me and friends always had to spend so much time calulating how this subject or assignment would affect our wam, grade or mark so I decided to create WAMARK',
+            purposeimg: {WAMARK1},
+            stack: 'Firebase was an obvious pick for this project since it was a powerful technology that allowed for easy integration with react and nextjs. The documentation for firebase is also very through which helped the entire process',
+            stackimg: {WAMARK2},
+            issues:'Manipulating data within a database was the hardest part of the project learning how to correctly store data and retrieve it required alot of planning and foresight and designing effecient code that was light on requests was not an easy task but luckily the documentation was a big help!',
+            issuesimg: {WAMARK3}
+        },
+        carouselPhotos: [
+            {WAMARK1}, {WAMARK2}, {WAMARK3},
+        ]
+    },
+    {
         name: 'Java JSP Mock Store',
         img: {JSP},
         desc: 'A full stack application developed within a team, aimed at emulating an server side e-commerce system that allows users to login, manage their accounts and place orders, it also features a staff management system that allows for full CRUD features. All the data is fully hosted on a local sql database',
@@ -175,8 +197,8 @@ const projects = [
         img: {EPortfolio},
         desc: 'A personal e-portfolio developed as a way to showcase projects and skills and allow for communication and interaction',
         stack: ['SASS', 'Javascript', 'React', 'NextJs'],
-        linkGit: 'https://alextranportfolio.com/',
-        linkSite: 'https://github.com/alexalextran/Portfolio-Website-5.0',
+        linkGit: 'https://github.com/alexalextran/Portfolio-Website-5.0',
+        linkSite: 'https://alextranportfolio.com/',
         projectdata: {
             purpose: 'While previous renditions of my e-portfolio exist, V4 did not do a very good job of showcasing each project with an in-depth explanation and was very brief, which is why V5 was designed to allow for the option between a brief summary and an in depth explanation of the entire coding process',
             purposeimg: {EPortfolio},
@@ -189,6 +211,7 @@ const projects = [
             {EPortfolio}, {EPortfolio2}, {EPortfolio3}, {EPortfolio4}, {EPortfolio5}
         ]
     },
+
    
 ]
 export default projects;
