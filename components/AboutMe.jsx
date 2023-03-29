@@ -43,7 +43,7 @@ const AboutMe = () => {
                 </div>
                 </div>
             </div>
-            <a className={styles.button} href="AlexTran.docx"><div className={styles.buttonanimation} download="Alex_Tran_Resume"></div>Download my Resume</a>
+            <a className={styles.button} href="AlexTranV2.docx"><div className={styles.buttonanimation} download="Alex_Tran_Resume"></div>Download my Resume</a>
         </section>
     );
 }
