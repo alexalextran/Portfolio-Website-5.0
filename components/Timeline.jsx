@@ -18,7 +18,7 @@ const Timeline = () => {
 
            <TimelineCard direction={styles.left} title={"Project Developments"} date={"August 2022"} text={"After spending half a year learning how to create solid full stack applications, I determined I was ready to take on proper full stack web applications and also spent more time working towards my grades for my univeristy classes"} parllaxValues={'-20%'}/>
 
-           <TimelineCard direction={styles.right} title={"Data Structures And Algorithms"} date={"January 2023"} text={"Spending so much time working on my projects realized I also needed to work on my data structures and algorithms department, so I decided to take a small break from my own projects and start working on leet code questions, this is also the same time i enrolled into my DSA class"} parllaxValues={'-20%'}/>
+           <TimelineCard direction={styles.right} title={"Data Structures And Algorithms"} date={"January 2023"} text={"Spending so much time working on my projects realized I also needed to work on my data structures and algorithms department, so I decided to take a small break from my own projects and start working on leet code questions, this is also the same time i enrolled into my DSA class"} parllaxValues={'20%'}/>
           
         </section>
     );
