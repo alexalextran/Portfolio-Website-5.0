@@ -8,7 +8,6 @@ import Statistics from '../components/Statistics';
 import Timeline from '../components/Timeline';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
-import { Analytics } from "@vercel/analytics/react"
 export default function Home() {
 
 
@@ -21,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main>
-      <Analytics />
+    
       <ParallaxProvider>
         <Nav/>
        <LandingPage/>
