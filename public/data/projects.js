@@ -37,8 +37,33 @@ import EPortfolio5 from '../projects/EPortfolio5.png'
 import WAMARK1 from '../projects/WAMARK1.png'
 import WAMARK2 from '../projects/WAMARK2.png'
 import WAMARK3 from '../projects/WAMARK3.png'
+import clarichat1 from '../projects/clarichat1.png'
+import clarichat2 from '../projects/clarichat2.png'
+import clarichat3 from '../projects/clarichat3.png'
+import clarichat4 from '../projects/clarichat4.png'
+import clarichat5 from '../projects/clarichat5.png'
 
 const projects = [
+
+    {
+        name: 'Clarichat AI Interviewer',
+        img: {clarichat1},
+        desc: 'A full stack appplication developed within a team, aimed at emulating an interview session by providing personalised feedback to users based on their reponses to specific questions. The application also features a secure login system and a dynamic dashboard that allows the user to view their previous interviews and feedback and multiple fields, jobs and questions',
+        stack: ['SASS', 'Javascript', 'React', 'NextJs', 'Firebase', 'OpenAI', 'Vercel', 'Azure'],
+        linkGit: 'https://github.com/alexalextran/Advanced-Software-Dev',
+        linkSite: 'https://asd-a03k5iwp5-alexalextran.vercel.app/',
+        projectdata: {
+            purpose: 'Clarichat was a project that was developed for a university studio subject that was aimed at developing our software development skills, the project was intended to be a mock AI interviewer that would provide feedback to the user based on their responses to specific questions',
+            purposeimg: {clarichat1},
+            stack: 'For this project we decided to utilize the open ai api key to generate and provide personalised feedback to the user, these responses would then be stored in a firebase database and then be displayed on the dashboard, react was chosen to allow for a scalable and dynamic UI',
+            stackimg: {clarichat5},
+            issues:'The hardest part of the project was the team collabaration as while, we had an idea of how our clarichat program would work, we were unsure on how to proceed in the right direction to achieve our intended goals, thus I had to step up multiple times to ensure all group members were informed and had a clear vision of the intended path that the project needed to go in.',
+            issuesimg: {clarichat2}
+        },
+        carouselPhotos: [
+            {clarichat1}, {clarichat2}, {clarichat3}, {clarichat4}, {clarichat5}
+        ]
+    },
     {
         name: 'Max-Cozis',
         img: {MaxCozis},
@@ -204,13 +229,14 @@ const projects = [
             purposeimg: {EPortfolio},
             stack: 'React was chosen for its ease of use and its reusability and scalability when it comes to component, while nextjs was chosen as a way to generate dynamic scalable pages that are generated from json data to showcase projects on a separate page',
             stackimg: {EPortfolioIssue},
-            issues:'The hardest aspect of this project was actually coding, it was the planning side, while i could of just redesigned my old project with react again, i decided to use a different approach to make this project way more scalable and easier to manage, so i had to decide what language/technology to add to my stack. So thus i had to watch several video and go through different articles to form my own judgement on which technology would suit my goals and purpose most which is where nextJS comes in.',
+            issues:'The hardest aspect of this project was not actually coding, it was the planning side, while i could of just redesigned my old project with react again, i decided to use a different approach to make this project way more scalable and easier to manage, so i had to decide what language/technology to add to my stack. So thus i had to watch several video and go through different articles to form my own judgement on which technology would suit my goals and purpose most which is where nextJS comes in.',
             issuesimg: {EPortfolio}
         },
         carouselPhotos: [
             {EPortfolio}, {EPortfolio2}, {EPortfolio3}, {EPortfolio4}, {EPortfolio5}
         ]
-    },
+    }
+   
 
    
 ]
