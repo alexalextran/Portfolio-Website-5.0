@@ -42,9 +42,35 @@ import clarichat2 from '../projects/clarichat2.png'
 import clarichat3 from '../projects/clarichat3.png'
 import clarichat4 from '../projects/clarichat4.png'
 import clarichat5 from '../projects/clarichat5.png'
+import TravelTrail1 from '../projects/TravelTrail1.png'
+import TravelTrail2 from '../projects/TravelTrail2.png'
+import TravelTrail3 from '../projects/TravelTrail3.png'
+import TravelTrail4 from '../projects/TravelTrail4.png'
+import TravelTrail5 from '../projects/TravelTrail5.png'
+import TravelTrail6 from '../projects/TravelTrail6.png'
 
 const projects = [
 
+
+    {
+        name: 'Travel Trail',
+        img: {TravelTrail1},
+        desc: 'A fullstack application developed as a way to sort out my own japan travel trip and for myself to learn more about typescript, the application is an advanced travel planner that integrates multiple modern features such as a dynamic interactive map, social media system, intuitive UI systems.',
+        stack: ['Javascript', 'Typescript', 'Redux', 'React', 'NextJs', 'Firebase', 'Vercel', 'Azure'],
+        linkGit: 'https://github.com/alexalextran/traveltrail',
+        linkSite: 'https://www.traveltrailalextran.com/',
+        projectdata: {
+            purpose: 'Travel Trail is a project that was developed for the sole purpose of planning my own trip to japan, the project was intended to be a mock travel planner that would provide a detailed itinerary of my trip to japan, the project was also intended to be a learning experience for me to learn more about typescript and redux.',
+            purposeimg: {TravelTrail1},
+            stack: 'For this project typescript was chosen to allow for a more robust and scalable program, it offered many convenient features that allow for ease of development.',
+            stackimg: {TravelTrail2},
+            issues:'The most difficult part of the development process was the usage of typescript, since this was my first time working with it, it was challenging to see how I could apply it.',
+            issuesimg: {TravelTrail3}
+        },
+        carouselPhotos: [
+            {TravelTrail1}, {TravelTrail2}, {TravelTrail3}, {TravelTrail4}, {TravelTrail5}, {TravelTrail6}
+        ]
+    },
     {
         name: 'Clarichat AI Interviewer',
         img: {clarichat1},
