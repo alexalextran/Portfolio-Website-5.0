@@ -7,7 +7,7 @@ import FireBase from '../skills/firebase.svg';
 import Nextjs from '../skills/nextjs.svg';
 import Git from '../skills/git.svg';
 import Redux from '../skills/redux.svg';
-import typescript from '../skills/typescript.svg';
+import Typescript from '../skills/typescript.svg';
 
 const skillsUse = [
   {
@@ -28,7 +28,7 @@ const skillsUse = [
   },
   {
     name: 'Typescript',
-    img: typescript
+    img: Typescript
   },
   {
     name: 'Redux',
