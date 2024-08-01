@@ -20,10 +20,6 @@ import SQL from '../skills/sql.svg'
         img: {Express}
     },
     {
-        name: 'Redux',
-        img: {Redux}
-    },
-    {
         name: 'MongoDB',
         img: {MongoDB}
     },
