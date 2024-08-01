@@ -6,7 +6,8 @@ import React from '../skills/react.svg'
 import FireBase from '../skills/firebase.svg'
 import Nextjs from '../skills/nextjs.svg'
 import Git from '../skills/git.svg'
-
+import Redux from '../skills/redux.svg'
+import typescript from '../skills/typescript.svg'
 
  const skillsUse = [
     {
@@ -25,6 +26,14 @@ import Git from '../skills/git.svg'
     {
         name: 'Javascript',
         img: {Javascript}
+    },
+    {
+        name: 'Typescript',
+        img: {typescript}
+    },
+    {
+        name: 'Redux',
+        img: {Redux}
     },
     {
         name: 'React',
