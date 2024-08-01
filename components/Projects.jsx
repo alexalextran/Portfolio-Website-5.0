@@ -5,7 +5,7 @@ import ProjectsCard from './UI/ProjectsCard';
 import CarouselComponent from './UI/CarouselComponent';
 
 const Projects = () => {
-    const [currentProject, setcurrentProject] = useState('TravelTrail');
+    const [currentProject, setcurrentProject] = useState('Travel Trail');
   
     return (
         <div className={styles.section} id="projects">
