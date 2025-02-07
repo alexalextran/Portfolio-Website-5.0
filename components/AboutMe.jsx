@@ -9,7 +9,7 @@ const AboutMe = () => {
       <h1>About Me</h1>
 
       <p>
-        Hey, thanks for taking the time to check out my portfolio! I'm{" "}
+        Hey, thanks for taking the time to check out my portfolio! I&apos;m{" "}
         <span>Alex</span>, a{" "}
         <span>Computing Science (Honors) student at UTS</span> with a passion
         for designing and developing web applications that deliver exceptional
