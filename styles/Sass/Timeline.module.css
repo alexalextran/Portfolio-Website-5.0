@@ -57,6 +57,16 @@
   text-align: center;
   position: relative;
 }
+.timelineTitle{
+  font-size: 0.9em;
+}
+.timelineDate{
+  font-size: 0.8em;
+}
+.timelineText{
+  margin-top: 1em;
+  font-size: 0.7em;
+}
 
 .left {
   left: 0%;

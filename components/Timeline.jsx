@@ -76,6 +76,16 @@ const Timeline = () => {
         }
         parllaxValues={"-20%"}
       />
+
+      <TimelineCard
+        direction={styles.right}
+        title={"ND&Co"}
+        date={"Febuary 2025"}
+        text={
+          "I started working as a Graduate ICT at ND&Co in February 2025, specializing in the ServiceNow platform. My role involves scripting, development, and implementing ServiceNow applications. Gaining my first real industry experience has been an incredible learning opportunity, allowing me to apply both my technical and soft skills in a real-world environment. Working with key clients such as ServiceNSW, BlackRock, and Sydney Airport has been invaluable, providing me with hands-on experience and deeper insights into the industry. During this time I've also been working on Travel Trail on the side, continuing to refine and enhance the application. My goal is to continue growing as a developer and expand my knowledge in the tech industry, with the aim of becoming a senior full-stack developer in the future."
+        }
+        parllaxValues={"20%"}
+      />
     </section>
   );
 };
